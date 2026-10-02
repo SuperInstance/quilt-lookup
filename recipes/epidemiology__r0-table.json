@@ -1,0 +1,53 @@
+{
+  "id": "recipe.epidemiology__r0-table",
+  "title": "Published R0 ballpark by disease",
+  "catalog_entry": "epidemiology__r0-table",
+  "family": "EPIDEMIOLOGY",
+  "catalog_name": "R0 table",
+  "kind": "lookup",
+  "inputs": [
+    "disease"
+  ],
+  "example_input": {
+    "disease": "measles"
+  },
+  "expected_output": 15,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": "teaching-grade approximations from the literature; ranges exist",
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "measles": 15,
+      "smallpox": 5,
+      "influenza": 1.3,
+      "ebola": 2,
+      "sars-cov-1": 3
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.epidemiology__r0-table.data",
+        "kind": "value",
+        "value": {
+          "measles": 15,
+          "smallpox": 5,
+          "influenza": 1.3,
+          "ebola": 2,
+          "sars-cov-1": 3
+        }
+      },
+      {
+        "id": "quilt.lookup.epidemiology__r0-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.epidemiology__r0-table.data\"][disease]",
+        "deps": [
+          "quilt.lookup.epidemiology__r0-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

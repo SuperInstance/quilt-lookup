@@ -1,0 +1,61 @@
+{
+  "id": "recipe.spreadsheet-engine-internals__dependency-graph-table",
+  "title": "Cell precedents map (the recalc planner’s view)",
+  "catalog_entry": "spreadsheet-engine-internals__dependency-graph-table",
+  "family": "SPREADSHEET ENGINE INTERNALS",
+  "catalog_name": "Dependency graph table",
+  "kind": "lookup",
+  "inputs": [
+    "cell"
+  ],
+  "example_input": {
+    "cell": "sheet1!d2"
+  },
+  "expected_output": [
+    "sheet1!d1"
+  ],
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "sheet1!d1": [
+        "sheet1!a1",
+        "sheet1!b2"
+      ],
+      "sheet1!d2": [
+        "sheet1!d1"
+      ],
+      "sheet1!a1": []
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.spreadsheet-engine-internals__dependency-graph-table.data",
+        "kind": "value",
+        "value": {
+          "sheet1!d1": [
+            "sheet1!a1",
+            "sheet1!b2"
+          ],
+          "sheet1!d2": [
+            "sheet1!d1"
+          ],
+          "sheet1!a1": []
+        }
+      },
+      {
+        "id": "quilt.lookup.spreadsheet-engine-internals__dependency-graph-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.spreadsheet-engine-internals__dependency-graph-table.data\"][cell]",
+        "deps": [
+          "quilt.lookup.spreadsheet-engine-internals__dependency-graph-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

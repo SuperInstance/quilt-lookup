@@ -1,0 +1,38 @@
+{
+  "id": "recipe.coding-theory__hamming-code-table",
+  "title": "Single parity bit over 3 data bits",
+  "catalog_entry": "coding-theory__hamming-code-table",
+  "family": "CODING THEORY",
+  "catalog_name": "Hamming code table",
+  "kind": "formula",
+  "inputs": [
+    "d1",
+    "d2",
+    "d3"
+  ],
+  "example_input": {
+    "d1": 1,
+    "d2": 0,
+    "d3": 1
+  },
+  "expected_output": 0,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "(d1 + d2 + d3) % 2"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.coding-theory__hamming-code-table",
+        "kind": "formula",
+        "expr": "=(d1 + d2 + d3) % 2",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

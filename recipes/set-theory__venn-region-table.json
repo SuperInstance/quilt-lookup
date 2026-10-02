@@ -1,0 +1,51 @@
+{
+  "id": "recipe.set-theory__venn-region-table",
+  "title": "Two-set Venn region counts |A|=30 |B|=25 |A∩B|=10 universe=80",
+  "catalog_entry": "set-theory__venn-region-table",
+  "family": "SET THEORY",
+  "catalog_name": "Venn region table",
+  "kind": "lookup",
+  "inputs": [
+    "region"
+  ],
+  "example_input": {
+    "region": "AB"
+  },
+  "expected_output": 10,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": "region counts precomputed by inclusion-exclusion; the sheet reads cells",
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "A": 20,
+      "B": 15,
+      "AB": 10,
+      "neither": 35
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.set-theory__venn-region-table.data",
+        "kind": "value",
+        "value": {
+          "A": 20,
+          "B": 15,
+          "AB": 10,
+          "neither": 35
+        }
+      },
+      {
+        "id": "quilt.lookup.set-theory__venn-region-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.set-theory__venn-region-table.data\"][region]",
+        "deps": [
+          "quilt.lookup.set-theory__venn-region-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

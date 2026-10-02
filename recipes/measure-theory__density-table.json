@@ -1,0 +1,53 @@
+{
+  "id": "recipe.measure-theory__density-table",
+  "title": "Standard normal density phi(z), 4dp",
+  "catalog_entry": "measure-theory__density-table",
+  "family": "MEASURE THEORY",
+  "catalog_name": "Density table",
+  "kind": "lookup",
+  "inputs": [
+    "z"
+  ],
+  "example_input": {
+    "z": "1.0"
+  },
+  "expected_output": 0.242,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "0.0": 0.3989,
+      "0.5": 0.3521,
+      "1.0": 0.242,
+      "1.5": 0.1295,
+      "2.0": 0.054
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.measure-theory__density-table.data",
+        "kind": "value",
+        "value": {
+          "0.0": 0.3989,
+          "0.5": 0.3521,
+          "1.0": 0.242,
+          "1.5": 0.1295,
+          "2.0": 0.054
+        }
+      },
+      {
+        "id": "quilt.lookup.measure-theory__density-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.measure-theory__density-table.data\"][z]",
+        "deps": [
+          "quilt.lookup.measure-theory__density-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

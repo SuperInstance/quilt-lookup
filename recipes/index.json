@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "generator": "scripts/emit-recipes.mjs",
+    "generated_utc": "2026-10-02T04:15:16.918Z",
+    "count": 56,
+    "by_kind": {
+      "lookup": 43,
+      "formula": 13
+    },
+    "shape": "{id, title, catalog_entry, family, kind: lookup|formula, inputs, table_or_formula, example_input, expected_output, arena{cells: CellDef[]}, source, notes}",
+    "compat": "arena fragments use only kind value|formula per @quilt/core types.d.ts; retrieval is a formula cell over a value cell holding the table"
+  },
+  "recipes": [
+    {
+      "id": "recipe.set-theory__set-membership-table",
+      "catalog_entry": "set-theory__set-membership-table",
+      "family": "SET THEORY",
+      "kind": "lookup",
+      "file": "set-theory__set-membership-table.json"
+    },
+    {
+      "id": "recipe.set-theory__power-set-table",
+      "catalog_entry": "set-theory__power-set-table",
+      "family": "SET THEORY",
+      "kind": "lookup",
+      "file": "set-theory__power-set-table.json"
+    },
+    {
+      "id": "recipe.set-theory__venn-region-table",
+      "catalog_entry": "set-theory__venn-region-table",
+      "family": "SET THEORY",
+      "kind": "lookup",
+      "file": "set-theory__venn-region-table.json"
+    },
+    {
+      "id": "recipe.set-theory__equivalence-class-table",
+      "catalog_entry": "set-theory__equivalence-class-table",
+      "family": "SET THEORY",
+      "kind": "lookup",
+      "file": "set-theory__equivalence-class-table.json"
+    },
+    {
+      "id": "recipe.relations-functions__function-table",
+      "catalog_entry": "relations-functions__function-table",
+      "family": "RELATIONS & FUNCTIONS",
+      "kind": "lookup",
+      "file": "relations-functions__function-table.json"
+    },
+    {
+      "id": "recipe.relations-functions__transitive-closure-table",
+      "catalog_entry": "relations-functions__transitive-closure-table",
+      "family": "RELATIONS & FUNCTIONS",
+      "kind": "lookup",
+      "file": "relations-functions__transitive-closure-table.json"
+    },
+    {
+      "id": "recipe.relations-functions__binary-relation-matrix",
+      "catalog_entry": "relations-functions__binary-relation-matrix",
+      "family": "RELATIONS & FUNCTIONS",
+      "kind": "lookup",
+      "file": "relations-functions__binary-relation-matrix.json"
+    },
+    {
+      "id": "recipe.logic__truth-table",
+      "catalog_entry": "logic__truth-table",
+      "family": "LOGIC",
+      "kind": "lookup",
+      "file": "logic__truth-table.json"
+    },
+    {
+      "id": "recipe.logic__decision-table",
+      "catalog_entry": "logic__decision-table",
+      "family": "LOGIC",
+      "kind": "lookup",
+      "file": "logic__decision-table.json"
+    },
+    {
+      "id": "recipe.logic__state-transition-table",
+      "catalog_entry": "logic__state-transition-table",
+      "family": "LOGIC",
+      "kind": "lookup",
+      "file": "logic__state-transition-table.json"
+    },
+    {
+      "id": "recipe.logic__karnaugh-map",
+      "catalog_entry": "logic__karnaugh-map",
+      "family": "LOGIC",
+      "kind": "lookup",
+      "file": "logic__karnaugh-map.json"
+    },
+    {
+      "id": "recipe.linear-algebra__transition-matrix",
+      "catalog_entry": "linear-algebra__transition-matrix",
+      "family": "LINEAR ALGEBRA",
+      "kind": "lookup",
+      "file": "linear-algebra__transition-matrix.json"
+    },
+    {
+      "id": "recipe.linear-algebra__confusion-matrix",
+      "catalog_entry": "linear-algebra__confusion-matrix",
+      "family": "LINEAR ALGEBRA",
+      "kind": "lookup",
+      "file": "linear-algebra__confusion-matrix.json"
+    },
+    {
+      "id": "recipe.probability-statistics__z-table",
+      "catalog_entry": "probability-statistics__z-table",
+      "family": "PROBABILITY & STATISTICS",
+      "kind": "lookup",
+      "file": "probability-statistics__z-table.json"
+    },
+    {
+      "id": "recipe.probability-statistics__t-table",
+      "catalog_entry": "probability-statistics__t-table",
+      "family": "PROBABILITY & STATISTICS",
+      "kind": "lookup",
+      "file": "probability-statistics__t-table.json"
+    },
+    {
+      "id": "recipe.probability-statistics__chi-square-table",
+      "catalog_entry": "probability-statistics__chi-square-table",
+      "family": "PROBABILITY & STATISTICS",
+      "kind": "lookup",
+      "file": "probability-statistics__chi-square-table.json"
+    },
+    {
+      "id": "recipe.probability-statistics__conditional-probability-table",
+      "catalog_entry": "probability-statistics__conditional-probability-table",
+      "family": "PROBABILITY & STATISTICS",
+      "kind": "lookup",
+      "file": "probability-statistics__conditional-probability-table.json"
+    },
+    {
+      "id": "recipe.probability-statistics__bayes-table",
+      "catalog_entry": "probability-statistics__bayes-table",
+      "family": "PROBABILITY & STATISTICS",
+      "kind": "formula",
+      "file": "probability-statistics__bayes-table.json"
+    },
+    {
+      "id": "recipe.probability-statistics__frequency-table",
+      "catalog_entry": "probability-statistics__frequency-table",
+      "family": "PROBABILITY & STATISTICS",
+      "kind": "lookup",
+      "file": "probability-statistics__frequency-table.json"
+    },
+    {
+      "id": "recipe.probability-statistics__relative-frequency-table",
+      "catalog_entry": "probability-statistics__relative-frequency-table",
+      "family": "PROBABILITY & STATISTICS",
+      "kind": "formula",
+      "file": "probability-statistics__relative-frequency-table.json"
+    },
+    {
+      "id": "recipe.number-theory-combinatorics__pascal-s-triangle",
+      "catalog_entry": "number-theory-combinatorics__pascal-s-triangle",
+      "family": "NUMBER THEORY & COMBINATORICS",
+      "kind": "lookup",
+      "file": "number-theory-combinatorics__pascal-s-triangle.json"
+    },
+    {
+      "id": "recipe.number-theory-combinatorics__prime-table",
+      "catalog_entry": "number-theory-combinatorics__prime-table",
+      "family": "NUMBER THEORY & COMBINATORICS",
+      "kind": "lookup",
+      "file": "number-theory-combinatorics__prime-table.json"
+    },
+    {
+      "id": "recipe.number-theory-combinatorics__multiplication-table-mod-n",
+      "catalog_entry": "number-theory-combinatorics__multiplication-table-mod-n",
+      "family": "NUMBER THEORY & COMBINATORICS",
+      "kind": "lookup",
+      "file": "number-theory-combinatorics__multiplication-table-mod-n.json"
+    },
+    {
+      "id": "recipe.algebra__cayley-table",
+      "catalog_entry": "algebra__cayley-table",
+      "family": "ALGEBRA",
+      "kind": "lookup",
+      "file": "algebra__cayley-table.json"
+    },
+    {
+      "id": "recipe.algebra__boolean-algebra-table",
+      "catalog_entry": "algebra__boolean-algebra-table",
+      "family": "ALGEBRA",
+      "kind": "lookup",
+      "file": "algebra__boolean-algebra-table.json"
+    },
+    {
+      "id": "recipe.cs-discrete-tables__hash-table",
+      "catalog_entry": "cs-discrete-tables__hash-table",
+      "family": "CS & DISCRETE TABLES",
+      "kind": "lookup",
+      "file": "cs-discrete-tables__hash-table.json"
+    },
+    {
+      "id": "recipe.cs-discrete-tables__routing-table",
+      "catalog_entry": "cs-discrete-tables__routing-table",
+      "family": "CS & DISCRETE TABLES",
+      "kind": "lookup",
+      "file": "cs-discrete-tables__routing-table.json"
+    },
+    {
+      "id": "recipe.geometry-trig__unit-circle-table",
+      "catalog_entry": "geometry-trig__unit-circle-table",
+      "family": "GEOMETRY & TRIG",
+      "kind": "lookup",
+      "file": "geometry-trig__unit-circle-table.json"
+    },
+    {
+      "id": "recipe.geometry-trig__trig-table",
+      "catalog_entry": "geometry-trig__trig-table",
+      "family": "GEOMETRY & TRIG",
+      "kind": "formula",
+      "file": "geometry-trig__trig-table.json"
+    },
+    {
+      "id": "recipe.calculus-analysis__taylor-table",
+      "catalog_entry": "calculus-analysis__taylor-table",
+      "family": "CALCULUS & ANALYSIS",
+      "kind": "lookup",
+      "file": "calculus-analysis__taylor-table.json"
+    },
+    {
+      "id": "recipe.information-theory__entropy-table",
+      "catalog_entry": "information-theory__entropy-table",
+      "family": "INFORMATION THEORY",
+      "kind": "formula",
+      "file": "information-theory__entropy-table.json"
+    },
+    {
+      "id": "recipe.information-theory__huffman-code-table",
+      "catalog_entry": "information-theory__huffman-code-table",
+      "family": "INFORMATION THEORY",
+      "kind": "lookup",
+      "file": "information-theory__huffman-code-table.json"
+    },
+    {
+      "id": "recipe.coding-theory__hamming-code-table",
+      "catalog_entry": "coding-theory__hamming-code-table",
+      "family": "CODING THEORY",
+      "kind": "formula",
+      "file": "coding-theory__hamming-code-table.json"
+    },
+    {
+      "id": "recipe.cryptography__s-box-table",
+      "catalog_entry": "cryptography__s-box-table",
+      "family": "CRYPTOGRAPHY",
+      "kind": "lookup",
+      "file": "cryptography__s-box-table.json"
+    },
+    {
+      "id": "recipe.numerical-analysis__convergence-table",
+      "catalog_entry": "numerical-analysis__convergence-table",
+      "family": "NUMERICAL ANALYSIS",
+      "kind": "lookup",
+      "file": "numerical-analysis__convergence-table.json"
+    },
+    {
+      "id": "recipe.dynamical-systems__fixed-point-table",
+      "catalog_entry": "dynamical-systems__fixed-point-table",
+      "family": "DYNAMICAL SYSTEMS",
+      "kind": "lookup",
+      "file": "dynamical-systems__fixed-point-table.json"
+    },
+    {
+      "id": "recipe.cellular-automata__rule-table",
+      "catalog_entry": "cellular-automata__rule-table",
+      "family": "CELLULAR AUTOMATA",
+      "kind": "lookup",
+      "file": "cellular-automata__rule-table.json"
+    },
+    {
+      "id": "recipe.game-theory__normal-form-table",
+      "catalog_entry": "game-theory__normal-form-table",
+      "family": "GAME THEORY",
+      "kind": "lookup",
+      "file": "game-theory__normal-form-table.json"
+    },
+    {
+      "id": "recipe.social-choice__borda-count-table",
+      "catalog_entry": "social-choice__borda-count-table",
+      "family": "SOCIAL CHOICE",
+      "kind": "lookup",
+      "file": "social-choice__borda-count-table.json"
+    },
+    {
+      "id": "recipe.social-choice__borda-count-table",
+      "catalog_entry": "social-choice__borda-count-table",
+      "family": "SOCIAL CHOICE",
+      "kind": "formula",
+      "file": "social-choice__borda-count-table.json"
+    },
+    {
+      "id": "recipe.reinforcement-learning__q-table",
+      "catalog_entry": "reinforcement-learning__q-table",
+      "family": "REINFORCEMENT LEARNING",
+      "kind": "lookup",
+      "file": "reinforcement-learning__q-table.json"
+    },
+    {
+      "id": "recipe.finance__time-value-of-money-table",
+      "catalog_entry": "finance__time-value-of-money-table",
+      "family": "FINANCE",
+      "kind": "formula",
+      "file": "finance__time-value-of-money-table.json"
+    },
+    {
+      "id": "recipe.epidemiology__r0-table",
+      "catalog_entry": "epidemiology__r0-table",
+      "family": "EPIDEMIOLOGY",
+      "kind": "lookup",
+      "file": "epidemiology__r0-table.json"
+    },
+    {
+      "id": "recipe.control-theory__pid-table",
+      "catalog_entry": "control-theory__pid-table",
+      "family": "CONTROL THEORY",
+      "kind": "formula",
+      "file": "control-theory__pid-table.json"
+    },
+    {
+      "id": "recipe.machine-learning__roc-curve-table",
+      "catalog_entry": "machine-learning__roc-curve-table",
+      "family": "MACHINE LEARNING",
+      "kind": "lookup",
+      "file": "machine-learning__roc-curve-table.json"
+    },
+    {
+      "id": "recipe.queueing-theory__m-m-1-table",
+      "catalog_entry": "queueing-theory__m-m-1-table",
+      "family": "QUEUEING THEORY",
+      "kind": "formula",
+      "file": "queueing-theory__m-m-1-table.json"
+    },
+    {
+      "id": "recipe.queueing-theory__kendall-notation-table",
+      "catalog_entry": "queueing-theory__kendall-notation-table",
+      "family": "QUEUEING THEORY",
+      "kind": "lookup",
+      "file": "queueing-theory__kendall-notation-table.json"
+    },
+    {
+      "id": "recipe.measure-theory__density-table",
+      "catalog_entry": "measure-theory__density-table",
+      "family": "MEASURE THEORY",
+      "kind": "lookup",
+      "file": "measure-theory__density-table.json"
+    },
+    {
+      "id": "recipe.quantum-computing__gate-matrix-table",
+      "catalog_entry": "quantum-computing__gate-matrix-table",
+      "family": "QUANTUM COMPUTING",
+      "kind": "lookup",
+      "file": "quantum-computing__gate-matrix-table.json"
+    },
+    {
+      "id": "recipe.quantum-computing__measurement-table",
+      "catalog_entry": "quantum-computing__measurement-table",
+      "family": "QUANTUM COMPUTING",
+      "kind": "formula",
+      "file": "quantum-computing__measurement-table.json"
+    },
+    {
+      "id": "recipe.reliability-maintenance__series-reliability-table",
+      "catalog_entry": "reliability-maintenance__series-reliability-table",
+      "family": "RELIABILITY & MAINTENANCE",
+      "kind": "formula",
+      "file": "reliability-maintenance__series-reliability-table.json"
+    },
+    {
+      "id": "recipe.reliability-maintenance__availability-table",
+      "catalog_entry": "reliability-maintenance__availability-table",
+      "family": "RELIABILITY & MAINTENANCE",
+      "kind": "formula",
+      "file": "reliability-maintenance__availability-table.json"
+    },
+    {
+      "id": "recipe.spreadsheet-engine-internals__dependency-graph-table",
+      "catalog_entry": "spreadsheet-engine-internals__dependency-graph-table",
+      "family": "SPREADSHEET ENGINE INTERNALS",
+      "kind": "lookup",
+      "file": "spreadsheet-engine-internals__dependency-graph-table.json"
+    },
+    {
+      "id": "recipe.spreadsheet-engine-internals__cell-kind-table",
+      "catalog_entry": "spreadsheet-engine-internals__cell-kind-table",
+      "family": "SPREADSHEET ENGINE INTERNALS",
+      "kind": "lookup",
+      "file": "spreadsheet-engine-internals__cell-kind-table.json"
+    },
+    {
+      "id": "recipe.computational-geometry__orientation-table",
+      "catalog_entry": "computational-geometry__orientation-table",
+      "family": "COMPUTATIONAL GEOMETRY",
+      "kind": "formula",
+      "file": "computational-geometry__orientation-table.json"
+    },
+    {
+      "id": "recipe.computational-geometry__point-in-polygon-table",
+      "catalog_entry": "computational-geometry__point-in-polygon-table",
+      "family": "COMPUTATIONAL GEOMETRY",
+      "kind": "lookup",
+      "file": "computational-geometry__point-in-polygon-table.json"
+    }
+  ]
+}

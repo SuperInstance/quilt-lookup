@@ -1,0 +1,62 @@
+{
+  "id": "recipe.relations-functions__transitive-closure-table",
+  "title": "Transitive closure of a->b->c (precomputed reachability)",
+  "catalog_entry": "relations-functions__transitive-closure-table",
+  "family": "RELATIONS & FUNCTIONS",
+  "catalog_name": "Transitive closure table",
+  "kind": "lookup",
+  "inputs": [
+    "node"
+  ],
+  "example_input": {
+    "node": "a"
+  },
+  "expected_output": [
+    "b",
+    "c"
+  ],
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "a": [
+        "b",
+        "c"
+      ],
+      "b": [
+        "c"
+      ],
+      "c": []
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.relations-functions__transitive-closure-table.data",
+        "kind": "value",
+        "value": {
+          "a": [
+            "b",
+            "c"
+          ],
+          "b": [
+            "c"
+          ],
+          "c": []
+        }
+      },
+      {
+        "id": "quilt.lookup.relations-functions__transitive-closure-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.relations-functions__transitive-closure-table.data\"][node]",
+        "deps": [
+          "quilt.lookup.relations-functions__transitive-closure-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

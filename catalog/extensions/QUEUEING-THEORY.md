@@ -1,0 +1,13 @@
+QUEUEING THEORY
+- M/M/1 table - utilization, queue length, wait - examples: help desk, web server
+- Kendall notation table - arrival/service/servers code - examples: queue classification, capacity review
+- Little's law table - arrival rate, wait, items in system - examples: throughput planning, kanban
+- Erlang C table - agents, offered load, wait probability - examples: call centers, support staffing
+- Blocking probability table - trunks, load, block rate - examples: telephony, network sizing
+- Arrival process table - interval distribution, parameters - examples: traffic modeling, simulation
+- Service discipline table - rule, fairness metric - examples: FIFO vs priority, scheduling
+- Queue network table - node, routing probabilities - examples: job shops, packet networks
+- Priority queue table - class, arrival, service, wait - examples: ER triage, ticket queues
+- Utilization table - server, load, saturation flag - examples: capacity dashboards
+- Departure process table - inter-departure distribution - examples: cascading queues
+- Finite source table - population, service rate, idle time - examples: machine repair, terminal models

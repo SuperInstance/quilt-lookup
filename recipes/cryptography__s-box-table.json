@@ -1,0 +1,75 @@
+{
+  "id": "recipe.cryptography__s-box-table",
+  "title": "AES S-box, first row (0x00..0x0f) as decimal",
+  "catalog_entry": "cryptography__s-box-table",
+  "family": "CRYPTOGRAPHY",
+  "catalog_name": "S-box table",
+  "kind": "lookup",
+  "inputs": [
+    "byte"
+  ],
+  "example_input": {
+    "byte": "0x0f"
+  },
+  "expected_output": 118,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "0x00": 99,
+      "0x01": 124,
+      "0x02": 119,
+      "0x03": 123,
+      "0x04": 242,
+      "0x05": 107,
+      "0x06": 111,
+      "0x07": 197,
+      "0x08": 48,
+      "0x09": 1,
+      "0x0a": 103,
+      "0x0b": 43,
+      "0x0c": 254,
+      "0x0d": 215,
+      "0x0e": 171,
+      "0x0f": 118
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.cryptography__s-box-table.data",
+        "kind": "value",
+        "value": {
+          "0x00": 99,
+          "0x01": 124,
+          "0x02": 119,
+          "0x03": 123,
+          "0x04": 242,
+          "0x05": 107,
+          "0x06": 111,
+          "0x07": 197,
+          "0x08": 48,
+          "0x09": 1,
+          "0x0a": 103,
+          "0x0b": 43,
+          "0x0c": 254,
+          "0x0d": 215,
+          "0x0e": 171,
+          "0x0f": 118
+        }
+      },
+      {
+        "id": "quilt.lookup.cryptography__s-box-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.cryptography__s-box-table.data\"][byte]",
+        "deps": [
+          "quilt.lookup.cryptography__s-box-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

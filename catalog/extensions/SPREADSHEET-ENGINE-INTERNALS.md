@@ -1,0 +1,13 @@
+SPREADSHEET ENGINE INTERNALS
+- Dependency graph table - cell, precedents, dependents - examples: recalc planning, cycle checks
+- Recalc order table - cell, evaluation rank - examples: topological scheduling
+- Dirty region table - edit, affected cells - examples: incremental recompute
+- Version history table - cell, old value, new value, timestamp - examples: undo log, provenance
+- Formula dependency table - formula, referenced cells - examples: auto-deps, refactor safety
+- Cell kind table - cell, kind, purity - examples: value, formula, program, ai
+- Recalc frontier table - wave number, cells due - examples: wave-based evaluation
+- Undo stack table - action, inverse, pointer - examples: undo/redo
+- Copy semantics table - source, destination, transform - examples: relative vs absolute refs
+- Named range table - name, range, scope - examples: readable formulas
+- Error propagation table - cell, error kind, dependents - examples: ref error tracing
+- Snapshot table - version, state hash - examples: save states, rewind

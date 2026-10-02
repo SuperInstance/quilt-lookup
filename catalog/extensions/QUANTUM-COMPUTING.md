@@ -1,0 +1,13 @@
+QUANTUM COMPUTING
+- Qubit state table - basis states, amplitudes - examples: superposition, simulation
+- Gate matrix table - gate, unitary matrix - examples: X, Z, H, CNOT
+- Quantum truth table - input basis, output amplitudes - examples: gate semantics, teaching
+- Measurement table - outcome, probability - examples: Born rule, sampling
+- Bell state table - two qubits, correlations - examples: entanglement, teleportation
+- Circuit layer table - time step, gates applied - examples: scheduling, depth count
+- Bloch sphere table - angles, coordinates - examples: visualization, rotations
+- Fidelity table - states, overlap - examples: benchmarking, noise
+- Error correction table - syndrome, correction - examples: stabilizer codes
+- Decoherence table - time, coherence factor - examples: noise models
+- Phase kickback table - eigenstate, phase - examples: phase estimation
+- Oracle table - function, marked states - examples: Grover search

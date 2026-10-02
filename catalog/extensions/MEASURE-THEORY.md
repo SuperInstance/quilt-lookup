@@ -1,0 +1,13 @@
+MEASURE THEORY
+- Sigma-algebra table - events, closure flags - examples: probability spaces, event models
+- Measure table - sets, measure values - examples: length, area, probability mass
+- Outer measure table - covers, infimum bounds - examples: Caratheodory construction
+- Measurable function table - preimages, measurability flags - examples: random variables
+- Lebesgue integral table - simple functions, weights - examples: expectation, areas
+- Product measure table - rectangles, measures - examples: joint distributions, Fubini
+- Absolutely continuous table - null sets, mass transfer - examples: densities, Radon-Nikodym
+- Singular measure table - support, dimension - examples: Cantor measure, fractal mass
+- Atom table - indivisible sets, masses - examples: discrete distributions
+- Density table - points, density values - examples: PDF tables, likelihood
+- Convergence mode table - mode, conditions - examples: almost sure, in probability, in L1
+- Martingale table - filtration times, conditional means - examples: fair games, filtering

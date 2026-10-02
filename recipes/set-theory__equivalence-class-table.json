@@ -1,0 +1,63 @@
+{
+  "id": "recipe.set-theory__equivalence-class-table",
+  "title": "Equivalence classes of 0..9 under mod 3",
+  "catalog_entry": "set-theory__equivalence-class-table",
+  "family": "SET THEORY",
+  "catalog_name": "Equivalence class table",
+  "kind": "lookup",
+  "inputs": [
+    "n"
+  ],
+  "example_input": {
+    "n": "7"
+  },
+  "expected_output": 1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 0,
+      "4": 1,
+      "5": 2,
+      "6": 0,
+      "7": 1,
+      "8": 2,
+      "9": 0
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.set-theory__equivalence-class-table.data",
+        "kind": "value",
+        "value": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 0,
+          "4": 1,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 2,
+          "9": 0
+        }
+      },
+      {
+        "id": "quilt.lookup.set-theory__equivalence-class-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.set-theory__equivalence-class-table.data\"][n]",
+        "deps": [
+          "quilt.lookup.set-theory__equivalence-class-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

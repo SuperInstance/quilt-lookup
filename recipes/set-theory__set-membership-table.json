@@ -1,0 +1,96 @@
+{
+  "id": "recipe.set-theory__set-membership-table",
+  "title": "Access-control membership: (element, set) -> 1/0",
+  "catalog_entry": "set-theory__set-membership-table",
+  "family": "SET THEORY",
+  "catalog_name": "Set membership table",
+  "kind": "lookup",
+  "inputs": [
+    "element",
+    "setName"
+  ],
+  "example_input": {
+    "element": "carol",
+    "setName": "write"
+  },
+  "expected_output": 1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": "classic skills/ACL matrix; pure row/column read",
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "alice",
+      "bob",
+      "carol",
+      "dave"
+    ],
+    "cols": [
+      "read",
+      "write",
+      "admin"
+    ],
+    "cells": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.set-theory__set-membership-table.data",
+        "kind": "value",
+        "value": {
+          "alice": {
+            "read": 1,
+            "write": 1,
+            "admin": 0
+          },
+          "bob": {
+            "read": 1,
+            "write": 0,
+            "admin": 0
+          },
+          "carol": {
+            "read": 1,
+            "write": 1,
+            "admin": 1
+          },
+          "dave": {
+            "read": 0,
+            "write": 0,
+            "admin": 0
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.set-theory__set-membership-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.set-theory__set-membership-table.data\"][element][setName]",
+        "deps": [
+          "quilt.lookup.set-theory__set-membership-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

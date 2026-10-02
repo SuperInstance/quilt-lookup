@@ -1,0 +1,63 @@
+{
+  "id": "recipe.number-theory-combinatorics__prime-table",
+  "title": "nth prime, ranks 1..10",
+  "catalog_entry": "number-theory-combinatorics__prime-table",
+  "family": "NUMBER THEORY & COMBINATORICS",
+  "catalog_name": "Prime table",
+  "kind": "lookup",
+  "inputs": [
+    "rank"
+  ],
+  "example_input": {
+    "rank": "10"
+  },
+  "expected_output": 29,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "1": 2,
+      "2": 3,
+      "3": 5,
+      "4": 7,
+      "5": 11,
+      "6": 13,
+      "7": 17,
+      "8": 19,
+      "9": 23,
+      "10": 29
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.number-theory-combinatorics__prime-table.data",
+        "kind": "value",
+        "value": {
+          "1": 2,
+          "2": 3,
+          "3": 5,
+          "4": 7,
+          "5": 11,
+          "6": 13,
+          "7": 17,
+          "8": 19,
+          "9": 23,
+          "10": 29
+        }
+      },
+      {
+        "id": "quilt.lookup.number-theory-combinatorics__prime-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.number-theory-combinatorics__prime-table.data\"][rank]",
+        "deps": [
+          "quilt.lookup.number-theory-combinatorics__prime-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

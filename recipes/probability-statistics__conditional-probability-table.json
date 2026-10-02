@@ -1,0 +1,69 @@
+{
+  "id": "recipe.probability-statistics__conditional-probability-table",
+  "title": "Disease x test outcome counts: (status, test) -> count",
+  "catalog_entry": "probability-statistics__conditional-probability-table",
+  "family": "PROBABILITY & STATISTICS",
+  "catalog_name": "Conditional probability table",
+  "kind": "lookup",
+  "inputs": [
+    "status",
+    "test"
+  ],
+  "example_input": {
+    "status": "diseased",
+    "test": "test-positive"
+  },
+  "expected_output": 90,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "diseased",
+      "healthy"
+    ],
+    "cols": [
+      "test-positive",
+      "test-negative"
+    ],
+    "cells": [
+      [
+        90,
+        10
+      ],
+      [
+        180,
+        720
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.probability-statistics__conditional-probability-table.data",
+        "kind": "value",
+        "value": {
+          "diseased": {
+            "test-positive": 90,
+            "test-negative": 10
+          },
+          "healthy": {
+            "test-positive": 180,
+            "test-negative": 720
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.probability-statistics__conditional-probability-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.probability-statistics__conditional-probability-table.data\"][status][test]",
+        "deps": [
+          "quilt.lookup.probability-statistics__conditional-probability-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

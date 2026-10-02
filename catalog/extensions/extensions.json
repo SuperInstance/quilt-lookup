@@ -1,0 +1,70 @@
+{
+  "provenance": "wave-66 extension — families added by the fleet in the principal's exact style; the catalog filename says 'not complete', this is the fleet's answer",
+  "added_at": "2026-10-02",
+  "families": [
+    {
+      "name": "INFORMATION THEORY",
+      "entries": [
+        "- Entropy table - rows=outcomes, cols=probabilities, bits - examples: alphabet coding, uncertainty budget",
+        "- Channel capacity table - rows=channels, cols=bandwidth, bits/sec - examples: modem specs, telemetry budget",
+        "- Codebook table - rows=symbols, cols=codewords, lengths - examples: huffman tables, morse code",
+        "- Rate-distortion table - rows=rates, cols=distortions - examples: jpeg quality, audio bitrate",
+        "- Mutual information table - rows=variables, cols=targets, bits - examples: feature relevance, sensor fusion",
+        "- Typewriter channel table - rows=input, cols=output, confusion - examples: keypads, typo models",
+        "- Redundancy table - rows=encodings, cols=overhead - examples: ecc memory, parity disks",
+        "- KL divergence table - rows=distributions, cols=references, nats - examples: drift monitoring, model comparison"
+      ]
+    },
+    {
+      "name": "GAME THEORY",
+      "entries": [
+        "- Payoff matrix - rows=player A actions, cols=player B actions, utilities - examples: prisoner's dilemma, pricing wars",
+        "- Best response table - rows=opponent actions, cols=own actions, flags - examples: rock-paper-scissors, auctions",
+        "- Nash table - rows=strategy profiles, cols=deviation checks - examples: traffic equilibria, markets",
+        "- Zero-sum table - rows=maximin, cols=minimax, values - examples: matching pennies, poker ranges",
+        "- Extensive form table - rows=nodes, cols=actions, owners - examples: chess openings, negotiation trees",
+        "- Auction table - rows=bidder, cols=valuation, bid - examples: ad slots, spectrum sales",
+        "- Cooperative table - rows=coalitions, cols=value - examples: joint ventures, cost sharing",
+        "- Repeated game table - rows=rounds, cols=strategies, scores - examples: tit-for-tat, cartels"
+      ]
+    },
+    {
+      "name": "CONTROL THEORY",
+      "entries": [
+        "- State-space table - rows=states, cols=inputs, dynamics - examples: cruise control, drone attitude",
+        "- Gain margin table - rows=frequencies, cols=gains, dB - examples: amplifier design, PID tuning",
+        "- Phase margin table - rows=frequencies, cols=phases, degrees - examples: loop stability, servo design",
+        "- Bode table - rows=log frequency, cols=magnitude, phase - examples: filters, equalizers",
+        "- Nyquist table - rows=real, cols=imaginary, encirclements - examples: stability margins, oscillators",
+        "- Setpoint table - rows=operating points, cols=setpoints, outputs - examples: thermostats, chemical reactors",
+        "- Observability table - rows=states, cols=sensors, ranks - examples: kalman design, sensor placement",
+        "- Controllability table - rows=states, cols=actuators, ranks - examples: actuator sizing, fault tolerance"
+      ]
+    },
+    {
+      "name": "DYNAMICAL SYSTEMS",
+      "entries": [
+        "- Poincare section table - rows=orbits, cols=crossings - examples: pendulums, celestial mechanics",
+        "- Bifurcation table - rows=parameters, cols=attractors - examples: logistic map, dripping faucet",
+        "- Lyapunov table - rows=trajectories, cols=exponents - examples: chaos detection, stability",
+        "- Phase portrait table - rows=positions, cols=velocities, vectors - examples: predator-prey, circuits",
+        "- Limit cycle table - rows=amplitudes, cols=periods - examples: heartbeats, oscillators",
+        "- Basin table - rows=initial conditions, cols=attractors, labels - examples: ecosystem outcomes, market regimes",
+        "- Return map table - rows=peak n, cols=peak n+1 - examples: heart rhythms, laser pulses",
+        "- Cellular automaton table - rows=generations, cols=cells, states - examples: rule 110, game of life"
+      ]
+    },
+    {
+      "name": "TOPOLOGY & STRUCTURE",
+      "entries": [
+        "- Adjacency table - rows=vertices, cols=vertices, 1/0 - examples: metro maps, friendship graphs",
+        "- Incidence table - rows=vertices, cols=edges, -1/0/1 - examples: circuit meshes, hypergraphs",
+        "- Euler characteristic table - rows=complexes, cols=V-E-F, invariants - examples: polyhedra, meshes",
+        "- Covering table - rows=patches, cols=base points, fibers - examples: atlas pages, sensor coverage",
+        "- Homology table - rows=dimensions, cols=ranks, betti numbers - examples: data topology, shape analysis",
+        "- Manifold chart table - rows=charts, cols=coordinates, overlaps - examples: atlas construction, sensor frames",
+        "- Knot invariant table - rows=knots, cols=crossings, polynomials - examples: dna supercoils, link diagrams"
+      ]
+    }
+  ]
+}

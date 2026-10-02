@@ -1,0 +1,49 @@
+{
+  "id": "recipe.cs-discrete-tables__routing-table",
+  "title": "Routing table: destination prefix -> next hop",
+  "catalog_entry": "cs-discrete-tables__routing-table",
+  "family": "CS & DISCRETE TABLES",
+  "catalog_name": "Routing table",
+  "kind": "lookup",
+  "inputs": [
+    "destination"
+  ],
+  "example_input": {
+    "destination": "10.0.2.0/24"
+  },
+  "expected_output": "router-b",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "10.0.1.0/24": "router-a",
+      "10.0.2.0/24": "router-b",
+      "default": "gateway-x"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.cs-discrete-tables__routing-table.data",
+        "kind": "value",
+        "value": {
+          "10.0.1.0/24": "router-a",
+          "10.0.2.0/24": "router-b",
+          "default": "gateway-x"
+        }
+      },
+      {
+        "id": "quilt.lookup.cs-discrete-tables__routing-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.cs-discrete-tables__routing-table.data\"][destination]",
+        "deps": [
+          "quilt.lookup.cs-discrete-tables__routing-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

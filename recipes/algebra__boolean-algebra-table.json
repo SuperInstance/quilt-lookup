@@ -1,0 +1,69 @@
+{
+  "id": "recipe.algebra__boolean-algebra-table",
+  "title": "Boolean AND table",
+  "catalog_entry": "algebra__boolean-algebra-table",
+  "family": "ALGEBRA",
+  "catalog_name": "Boolean algebra table",
+  "kind": "lookup",
+  "inputs": [
+    "a",
+    "b"
+  ],
+  "example_input": {
+    "a": "1",
+    "b": "0"
+  },
+  "expected_output": 0,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "0",
+      "1"
+    ],
+    "cols": [
+      "0",
+      "1"
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.algebra__boolean-algebra-table.data",
+        "kind": "value",
+        "value": {
+          "0": {
+            "0": 0,
+            "1": 0
+          },
+          "1": {
+            "0": 0,
+            "1": 1
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.algebra__boolean-algebra-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.algebra__boolean-algebra-table.data\"][a][b]",
+        "deps": [
+          "quilt.lookup.algebra__boolean-algebra-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

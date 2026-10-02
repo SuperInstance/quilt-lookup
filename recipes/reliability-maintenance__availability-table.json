@@ -1,0 +1,36 @@
+{
+  "id": "recipe.reliability-maintenance__availability-table",
+  "title": "Steady-state availability A = MTBF / (MTBF + MTTR)",
+  "catalog_entry": "reliability-maintenance__availability-table",
+  "family": "RELIABILITY & MAINTENANCE",
+  "catalog_name": "Availability table",
+  "kind": "formula",
+  "inputs": [
+    "mtbf",
+    "mttr"
+  ],
+  "example_input": {
+    "mtbf": 1000,
+    "mttr": 10
+  },
+  "expected_output": 0.9900990099009901,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "mtbf / (mtbf + mttr)"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.reliability-maintenance__availability-table",
+        "kind": "formula",
+        "expr": "=mtbf / (mtbf + mttr)",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

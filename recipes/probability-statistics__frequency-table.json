@@ -1,0 +1,49 @@
+{
+  "id": "recipe.probability-statistics__frequency-table",
+  "title": "Tally by category: color -> count",
+  "catalog_entry": "probability-statistics__frequency-table",
+  "family": "PROBABILITY & STATISTICS",
+  "catalog_name": "Frequency table",
+  "kind": "lookup",
+  "inputs": [
+    "color"
+  ],
+  "example_input": {
+    "color": "blue"
+  },
+  "expected_output": 7,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "red": 12,
+      "blue": 7,
+      "green": 5
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.probability-statistics__frequency-table.data",
+        "kind": "value",
+        "value": {
+          "red": 12,
+          "blue": 7,
+          "green": 5
+        }
+      },
+      {
+        "id": "quilt.lookup.probability-statistics__frequency-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.probability-statistics__frequency-table.data\"][color]",
+        "deps": [
+          "quilt.lookup.probability-statistics__frequency-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

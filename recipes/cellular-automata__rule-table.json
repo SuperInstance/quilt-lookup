@@ -1,0 +1,59 @@
+{
+  "id": "recipe.cellular-automata__rule-table",
+  "title": "Wolfram rule 110 neighborhood table",
+  "catalog_entry": "cellular-automata__rule-table",
+  "family": "CELLULAR AUTOMATA",
+  "catalog_name": "Rule table",
+  "kind": "lookup",
+  "inputs": [
+    "neighborhood"
+  ],
+  "example_input": {
+    "neighborhood": "110"
+  },
+  "expected_output": "1",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "100": "0",
+      "101": "1",
+      "110": "1",
+      "111": "0",
+      "011": "1",
+      "010": "1",
+      "001": "1",
+      "000": "0"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.cellular-automata__rule-table.data",
+        "kind": "value",
+        "value": {
+          "100": "0",
+          "101": "1",
+          "110": "1",
+          "111": "0",
+          "011": "1",
+          "010": "1",
+          "001": "1",
+          "000": "0"
+        }
+      },
+      {
+        "id": "quilt.lookup.cellular-automata__rule-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.cellular-automata__rule-table.data\"][neighborhood]",
+        "deps": [
+          "quilt.lookup.cellular-automata__rule-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

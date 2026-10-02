@@ -1,0 +1,105 @@
+{
+  "id": "recipe.algebra__cayley-table",
+  "title": "Cayley table of (Z/4, +)",
+  "catalog_entry": "algebra__cayley-table",
+  "family": "ALGEBRA",
+  "catalog_name": "Cayley table",
+  "kind": "lookup",
+  "inputs": [
+    "a",
+    "b"
+  ],
+  "example_input": {
+    "a": "2",
+    "b": "3"
+  },
+  "expected_output": 1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "cols": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "cells": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        1,
+        2
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.algebra__cayley-table.data",
+        "kind": "value",
+        "value": {
+          "0": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3
+          },
+          "1": {
+            "0": 1,
+            "1": 2,
+            "2": 3,
+            "3": 0
+          },
+          "2": {
+            "0": 2,
+            "1": 3,
+            "2": 0,
+            "3": 1
+          },
+          "3": {
+            "0": 3,
+            "1": 0,
+            "2": 1,
+            "3": 2
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.algebra__cayley-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.algebra__cayley-table.data\"][a][b]",
+        "deps": [
+          "quilt.lookup.algebra__cayley-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

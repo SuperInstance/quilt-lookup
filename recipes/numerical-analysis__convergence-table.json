@@ -1,0 +1,51 @@
+{
+  "id": "recipe.numerical-analysis__convergence-table",
+  "title": "Root-finder order of convergence",
+  "catalog_entry": "numerical-analysis__convergence-table",
+  "family": "NUMERICAL ANALYSIS",
+  "catalog_name": "Convergence table",
+  "kind": "lookup",
+  "inputs": [
+    "method"
+  ],
+  "example_input": {
+    "method": "secant"
+  },
+  "expected_output": 1.618,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "bisection": 1,
+      "newton": 2,
+      "secant": 1.618,
+      "fixed-point": 1
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.numerical-analysis__convergence-table.data",
+        "kind": "value",
+        "value": {
+          "bisection": 1,
+          "newton": 2,
+          "secant": 1.618,
+          "fixed-point": 1
+        }
+      },
+      {
+        "id": "quilt.lookup.numerical-analysis__convergence-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.numerical-analysis__convergence-table.data\"][method]",
+        "deps": [
+          "quilt.lookup.numerical-analysis__convergence-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

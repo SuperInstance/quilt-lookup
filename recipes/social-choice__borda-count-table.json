@@ -1,0 +1,38 @@
+{
+  "id": "recipe.social-choice__borda-count-table",
+  "title": "Borda score with weights 2/1/0 for 3 candidates",
+  "catalog_entry": "social-choice__borda-count-table",
+  "family": "SOCIAL CHOICE",
+  "catalog_name": "Borda count table",
+  "kind": "formula",
+  "inputs": [
+    "first",
+    "second",
+    "third"
+  ],
+  "example_input": {
+    "first": 12,
+    "second": 5,
+    "third": 3
+  },
+  "expected_output": 29,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": "the weighted recombination layer of the same borda-count-table sheet (two recipes, one entry: matrix cell + score formula)",
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "2 * first + second"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.social-choice__borda-count-table",
+        "kind": "formula",
+        "expr": "=2 * first + second",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

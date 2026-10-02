@@ -1,0 +1,78 @@
+{
+  "id": "recipe.relations-functions__binary-relation-matrix",
+  "title": "Service ownership relation (domain x codomain 1/0)",
+  "catalog_entry": "relations-functions__binary-relation-matrix",
+  "family": "RELATIONS & FUNCTIONS",
+  "catalog_name": "Binary relation matrix",
+  "kind": "lookup",
+  "inputs": [
+    "service",
+    "owner"
+  ],
+  "example_input": {
+    "service": "api",
+    "owner": "team-b"
+  },
+  "expected_output": 0,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "api",
+      "ui",
+      "db"
+    ],
+    "cols": [
+      "team-a",
+      "team-b"
+    ],
+    "cells": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.relations-functions__binary-relation-matrix.data",
+        "kind": "value",
+        "value": {
+          "api": {
+            "team-a": 1,
+            "team-b": 0
+          },
+          "ui": {
+            "team-a": 0,
+            "team-b": 1
+          },
+          "db": {
+            "team-a": 1,
+            "team-b": 1
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.relations-functions__binary-relation-matrix",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.relations-functions__binary-relation-matrix.data\"][service][owner]",
+        "deps": [
+          "quilt.lookup.relations-functions__binary-relation-matrix.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

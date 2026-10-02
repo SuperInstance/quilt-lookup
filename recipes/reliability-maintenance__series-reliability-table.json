@@ -1,0 +1,36 @@
+{
+  "id": "recipe.reliability-maintenance__series-reliability-table",
+  "title": "Two-component series reliability R = R1 * R2",
+  "catalog_entry": "reliability-maintenance__series-reliability-table",
+  "family": "RELIABILITY & MAINTENANCE",
+  "catalog_name": "Series reliability table",
+  "kind": "formula",
+  "inputs": [
+    "r1",
+    "r2"
+  ],
+  "example_input": {
+    "r1": 0.9,
+    "r2": 0.8
+  },
+  "expected_output": 0.72,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "r1 * r2"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.reliability-maintenance__series-reliability-table",
+        "kind": "formula",
+        "expr": "=r1 * r2",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

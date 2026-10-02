@@ -1,0 +1,42 @@
+{
+  "id": "recipe.finance__time-value-of-money-table",
+  "title": "Future value FV = PV(1+r)^n",
+  "catalog_entry": "finance__time-value-of-money-table",
+  "family": "FINANCE",
+  "catalog_name": "Time value of money table",
+  "kind": "formula",
+  "inputs": [
+    "pv",
+    "r",
+    "n"
+  ],
+  "example_input": {
+    "pv": 1000,
+    "r": 0.05,
+    "n": 10
+  },
+  "expected_output": 1628.8946267774413,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "pv * Math.pow(1 + r, n)"
+  },
+  "helpers": [
+    "Math"
+  ],
+  "arena_compat_note": "arena formula helpers are abs/min/max/clamp; Math is needed here — flagged for engine parity",
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.finance__time-value-of-money-table",
+        "kind": "formula",
+        "expr": "=pv * Math.pow(1 + r, n)",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

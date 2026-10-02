@@ -1,0 +1,69 @@
+{
+  "id": "recipe.logic__karnaugh-map",
+  "title": "K-map cell read for f = x XOR y (Gray-ordered)",
+  "catalog_entry": "logic__karnaugh-map",
+  "family": "LOGIC",
+  "catalog_name": "Karnaugh map",
+  "kind": "lookup",
+  "inputs": [
+    "x",
+    "y"
+  ],
+  "example_input": {
+    "x": "1",
+    "y": "0"
+  },
+  "expected_output": 1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "0",
+      "1"
+    ],
+    "cols": [
+      "0",
+      "1"
+    ],
+    "cells": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.logic__karnaugh-map.data",
+        "kind": "value",
+        "value": {
+          "0": {
+            "0": 0,
+            "1": 1
+          },
+          "1": {
+            "0": 1,
+            "1": 0
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.logic__karnaugh-map",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.logic__karnaugh-map.data\"][x][y]",
+        "deps": [
+          "quilt.lookup.logic__karnaugh-map.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

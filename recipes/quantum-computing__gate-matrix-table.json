@@ -1,0 +1,112 @@
+{
+  "id": "recipe.quantum-computing__gate-matrix-table",
+  "title": "Gate -> unitary matrix (X, Z, H)",
+  "catalog_entry": "quantum-computing__gate-matrix-table",
+  "family": "QUANTUM COMPUTING",
+  "catalog_name": "Gate matrix table",
+  "kind": "lookup",
+  "inputs": [
+    "gate"
+  ],
+  "example_input": {
+    "gate": "Z"
+  },
+  "expected_output": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      -1
+    ]
+  ],
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "X": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "Z": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "H": [
+        [
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        [
+          0.7071067811865476,
+          -0.7071067811865476
+        ]
+      ]
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.quantum-computing__gate-matrix-table.data",
+        "kind": "value",
+        "value": {
+          "X": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "Z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "H": [
+            [
+              0.7071067811865476,
+              0.7071067811865476
+            ],
+            [
+              0.7071067811865476,
+              -0.7071067811865476
+            ]
+          ]
+        }
+      },
+      {
+        "id": "quilt.lookup.quantum-computing__gate-matrix-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.quantum-computing__gate-matrix-table.data\"][gate]",
+        "deps": [
+          "quilt.lookup.quantum-computing__gate-matrix-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

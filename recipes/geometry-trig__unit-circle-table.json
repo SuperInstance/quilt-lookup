@@ -1,0 +1,86 @@
+{
+  "id": "recipe.geometry-trig__unit-circle-table",
+  "title": "Unit circle: degrees -> [sin, cos] for special angles",
+  "catalog_entry": "geometry-trig__unit-circle-table",
+  "family": "GEOMETRY & TRIG",
+  "catalog_name": "Unit circle table",
+  "kind": "lookup",
+  "inputs": [
+    "degrees"
+  ],
+  "example_input": {
+    "degrees": "30"
+  },
+  "expected_output": [
+    0.5,
+    0.8660254037844386
+  ],
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "0": [
+        0,
+        1
+      ],
+      "30": [
+        0.5,
+        0.8660254037844386
+      ],
+      "45": [
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "60": [
+        0.8660254037844386,
+        0.5
+      ],
+      "90": [
+        1,
+        0
+      ]
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.geometry-trig__unit-circle-table.data",
+        "kind": "value",
+        "value": {
+          "0": [
+            0,
+            1
+          ],
+          "30": [
+            0.5,
+            0.8660254037844386
+          ],
+          "45": [
+            0.7071067811865476,
+            0.7071067811865476
+          ],
+          "60": [
+            0.8660254037844386,
+            0.5
+          ],
+          "90": [
+            1,
+            0
+          ]
+        }
+      },
+      {
+        "id": "quilt.lookup.geometry-trig__unit-circle-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.geometry-trig__unit-circle-table.data\"][degrees]",
+        "deps": [
+          "quilt.lookup.geometry-trig__unit-circle-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

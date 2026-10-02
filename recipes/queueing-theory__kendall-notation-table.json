@@ -1,0 +1,49 @@
+{
+  "id": "recipe.queueing-theory__kendall-notation-table",
+  "title": "Kendall notation decoder",
+  "catalog_entry": "queueing-theory__kendall-notation-table",
+  "family": "QUEUEING THEORY",
+  "catalog_name": "Kendall notation table",
+  "kind": "lookup",
+  "inputs": [
+    "code"
+  ],
+  "example_input": {
+    "code": "M/M/1"
+  },
+  "expected_output": "poisson-arrivals/exponential-service/1-server",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "M/M/1": "poisson-arrivals/exponential-service/1-server",
+      "M/M/c": "poisson-arrivals/exponential-service/c-servers",
+      "G/G/1": "general-arrivals/general-service/1-server"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.queueing-theory__kendall-notation-table.data",
+        "kind": "value",
+        "value": {
+          "M/M/1": "poisson-arrivals/exponential-service/1-server",
+          "M/M/c": "poisson-arrivals/exponential-service/c-servers",
+          "G/G/1": "general-arrivals/general-service/1-server"
+        }
+      },
+      {
+        "id": "quilt.lookup.queueing-theory__kendall-notation-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.queueing-theory__kendall-notation-table.data\"][code]",
+        "deps": [
+          "quilt.lookup.queueing-theory__kendall-notation-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

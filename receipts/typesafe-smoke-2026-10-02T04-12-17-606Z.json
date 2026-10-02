@@ -1,0 +1,85 @@
+{
+  "kind": "typesafe-smoke",
+  "lane": "66-d",
+  "repo": "quilt-lookup",
+  "purpose": "classify 5 unseen catalog entries into the 4 decomposition classes; first data point for automating classification",
+  "entries": [
+    {
+      "id": "games__chess-puzzle-table",
+      "line": "- Chess puzzle table - piece, move - chess",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "oceanography__tide-table",
+      "line": "- Tide table - time, height - tide",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "type-theory__curry-howard-table",
+      "line": "- Curry-Howard table - propositions as types - proofs as programs",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "astronomy__telescope-table",
+      "line": "- Telescope table - instrument, specification - telescope",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "philosophy__epistemology-table",
+      "line": "- Epistemology table - belief, justification - epistemology",
+      "rule_engine_class": "needs-dynamic-model"
+    }
+  ],
+  "model": "jev-latest",
+  "calls": 1,
+  "ts_utc": "2026-10-02T04:12:17.606Z",
+  "usage": {
+    "input_tokens": 1488,
+    "output_tokens": 306
+  },
+  "latency_ms": 289.429,
+  "served_model": "jev-1.13.0",
+  "jev": [
+    {
+      "entry_id": "games__chess-puzzle-table",
+      "class": "needs-dynamic-model",
+      "text": "{\"type\":\"choice\",\"choice\":\"needs-dynamic-model\",\"confidence\":0.5,\"probabilities\":{\"needs-dynamic-model\":0.63,\"lookup-with-weights\":0.01,\"greeter-territory\":0,\"pure-lookup\":0.36}}"
+    },
+    {
+      "entry_id": "oceanography__tide-table",
+      "class": "pure-lookup",
+      "text": "{\"type\":\"choice\",\"choice\":\"pure-lookup\",\"confidence\":0.85,\"probabilities\":{\"needs-dynamic-model\":0.06,\"lookup-with-weights\":0.05,\"greeter-territory\":0,\"pure-lookup\":0.89}}"
+    },
+    {
+      "entry_id": "type-theory__curry-howard-table",
+      "class": "needs-dynamic-model",
+      "text": "{\"type\":\"choice\",\"choice\":\"needs-dynamic-model\",\"confidence\":0.66,\"probabilities\":{\"needs-dynamic-model\":0.74,\"lookup-with-weights\":0.02,\"greeter-territory\":0.01,\"pure-lookup\":0.23}}"
+    },
+    {
+      "entry_id": "astronomy__telescope-table",
+      "class": "pure-lookup",
+      "text": "{\"type\":\"choice\",\"choice\":\"pure-lookup\",\"confidence\":0.95,\"probabilities\":{\"needs-dynamic-model\":0.02,\"lookup-with-weights\":0.02,\"greeter-territory\":0,\"pure-lookup\":0.96}}"
+    },
+    {
+      "entry_id": "philosophy__epistemology-table",
+      "class": "needs-dynamic-model",
+      "text": "{\"type\":\"choice\",\"choice\":\"needs-dynamic-model\",\"confidence\":0.83,\"probabilities\":{\"needs-dynamic-model\":0.88,\"lookup-with-weights\":0.04,\"greeter-territory\":0.01,\"pure-lookup\":0.07}}"
+    }
+  ],
+  "agreement": 3,
+  "disagreements": [
+    {
+      "entry_id": "games__chess-puzzle-table",
+      "jev": "needs-dynamic-model",
+      "rule_engine": "pure-lookup",
+      "jev_text": "{\"type\":\"choice\",\"choice\":\"needs-dynamic-model\",\"confidence\":0.5,\"probabilities\":{\"needs-dynamic-model\":0.63,\"lookup-with-weights\":0.01,\"greeter-territory\":0,\"pure-lookup\":0.36}}"
+    },
+    {
+      "entry_id": "type-theory__curry-howard-table",
+      "jev": "needs-dynamic-model",
+      "rule_engine": "pure-lookup",
+      "jev_text": "{\"type\":\"choice\",\"choice\":\"needs-dynamic-model\",\"confidence\":0.66,\"probabilities\":{\"needs-dynamic-model\":0.74,\"lookup-with-weights\":0.02,\"greeter-territory\":0.01,\"pure-lookup\":0.23}}"
+    }
+  ],
+  "outcome": "ok"
+}

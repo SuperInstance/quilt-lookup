@@ -1,0 +1,36 @@
+{
+  "id": "recipe.queueing-theory__m-m-1-table",
+  "title": "M/M/1 utilization rho = lambda / mu",
+  "catalog_entry": "queueing-theory__m-m-1-table",
+  "family": "QUEUEING THEORY",
+  "catalog_name": "M/M/1 table",
+  "kind": "formula",
+  "inputs": [
+    "lambda",
+    "mu"
+  ],
+  "example_input": {
+    "lambda": 8,
+    "mu": 10
+  },
+  "expected_output": 0.8,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "lambda / mu"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.queueing-theory__m-m-1-table",
+        "kind": "formula",
+        "expr": "=lambda / mu",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

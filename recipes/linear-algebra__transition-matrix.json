@@ -1,0 +1,69 @@
+{
+  "id": "recipe.linear-algebra__transition-matrix",
+  "title": "Weather Markov transition cell P(tomorrow|today)",
+  "catalog_entry": "linear-algebra__transition-matrix",
+  "family": "LINEAR ALGEBRA",
+  "catalog_name": "Transition matrix",
+  "kind": "lookup",
+  "inputs": [
+    "today",
+    "tomorrow"
+  ],
+  "example_input": {
+    "today": "sunny",
+    "tomorrow": "rainy"
+  },
+  "expected_output": 0.1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "sunny",
+      "rainy"
+    ],
+    "cols": [
+      "sunny",
+      "rainy"
+    ],
+    "cells": [
+      [
+        0.9,
+        0.1
+      ],
+      [
+        0.5,
+        0.5
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.linear-algebra__transition-matrix.data",
+        "kind": "value",
+        "value": {
+          "sunny": {
+            "sunny": 0.9,
+            "rainy": 0.1
+          },
+          "rainy": {
+            "sunny": 0.5,
+            "rainy": 0.5
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.linear-algebra__transition-matrix",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.linear-algebra__transition-matrix.data\"][today][tomorrow]",
+        "deps": [
+          "quilt.lookup.linear-algebra__transition-matrix.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

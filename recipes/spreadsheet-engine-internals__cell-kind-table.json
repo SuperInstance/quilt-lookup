@@ -1,0 +1,59 @@
+{
+  "id": "recipe.spreadsheet-engine-internals__cell-kind-table",
+  "title": "Arena cell kind -> purity class (from @quilt/core types.d.ts)",
+  "catalog_entry": "spreadsheet-engine-internals__cell-kind-table",
+  "family": "SPREADSHEET ENGINE INTERNALS",
+  "catalog_name": "Cell kind table",
+  "kind": "lookup",
+  "inputs": [
+    "kind"
+  ],
+  "example_input": {
+    "kind": "router"
+  },
+  "expected_output": "delegate",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "value": "pure",
+      "formula": "pure",
+      "api": "effectful-network",
+      "program": "effectful",
+      "sensor": "push",
+      "listener": "effectful-action",
+      "router": "delegate",
+      "io": "bidirectional"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.spreadsheet-engine-internals__cell-kind-table.data",
+        "kind": "value",
+        "value": {
+          "value": "pure",
+          "formula": "pure",
+          "api": "effectful-network",
+          "program": "effectful",
+          "sensor": "push",
+          "listener": "effectful-action",
+          "router": "delegate",
+          "io": "bidirectional"
+        }
+      },
+      {
+        "id": "quilt.lookup.spreadsheet-engine-internals__cell-kind-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.spreadsheet-engine-internals__cell-kind-table.data\"][kind]",
+        "deps": [
+          "quilt.lookup.spreadsheet-engine-internals__cell-kind-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

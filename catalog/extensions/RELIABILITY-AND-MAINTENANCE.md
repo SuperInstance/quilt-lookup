@@ -1,0 +1,13 @@
+RELIABILITY & MAINTENANCE
+- Failure rate table - time, hazard - examples: bathtub curve, warranty
+- MTBF table - asset, mean time between failures - examples: maintenance planning
+- Fault tree table - gates, basic events, probabilities - examples: safety analysis, root cause
+- Failure mode table - mode, severity, occurrence, detection - examples: design review, FMEA
+- Series reliability table - components, reliability - examples: redundancy budgeting
+- Spare parts table - part, failure rate, stock - examples: inventory, SLAs
+- Weibull table - shape, scale, percentile life - examples: wear-out, burn-in
+- Preventive maintenance table - interval, cost, downtime - examples: schedules, optimization
+- Availability table - uptime, repair time - examples: SLA accounting
+- Standby redundancy table - units, switch reliability - examples: backup power, failover
+- Degradation table - time, condition index - examples: prognostics, remaining useful life
+- Repair policy table - state, action - examples: replace vs repair

@@ -1,0 +1,69 @@
+{
+  "id": "recipe.reinforcement-learning__q-table",
+  "title": "Q-table read: (state, action) -> value",
+  "catalog_entry": "reinforcement-learning__q-table",
+  "family": "REINFORCEMENT LEARNING",
+  "catalog_name": "Q-table",
+  "kind": "lookup",
+  "inputs": [
+    "state",
+    "action"
+  ],
+  "example_input": {
+    "state": "s1",
+    "action": "right"
+  },
+  "expected_output": 10,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "s1",
+      "s2"
+    ],
+    "cols": [
+      "left",
+      "right"
+    ],
+    "cells": [
+      [
+        0,
+        10
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.reinforcement-learning__q-table.data",
+        "kind": "value",
+        "value": {
+          "s1": {
+            "left": 0,
+            "right": 10
+          },
+          "s2": {
+            "left": 2,
+            "right": 3
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.reinforcement-learning__q-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.reinforcement-learning__q-table.data\"][state][action]",
+        "deps": [
+          "quilt.lookup.reinforcement-learning__q-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

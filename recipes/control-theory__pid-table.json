@@ -1,0 +1,44 @@
+{
+  "id": "recipe.control-theory__pid-table",
+  "title": "PID law with frozen integral/derivative state: u = Kp*e + Ki*I + Kd*D",
+  "catalog_entry": "control-theory__pid-table",
+  "family": "CONTROL THEORY",
+  "catalog_name": "PID table",
+  "kind": "formula",
+  "inputs": [
+    "kp",
+    "ki",
+    "kd",
+    "e",
+    "integral",
+    "deriv"
+  ],
+  "example_input": {
+    "kp": 2,
+    "ki": 0.5,
+    "kd": 0.1,
+    "e": 4,
+    "integral": 3,
+    "deriv": -2
+  },
+  "expected_output": 9.3,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "kp * e + ki * integral + kd * deriv"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.control-theory__pid-table",
+        "kind": "formula",
+        "expr": "=kp * e + ki * integral + kd * deriv",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

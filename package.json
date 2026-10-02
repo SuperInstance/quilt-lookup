@@ -1,0 +1,20 @@
+{
+  "name": "quilt-lookup",
+  "version": "1.0.0",
+  "description": "The principal's mathematical spreadsheet catalog as machine-usable JSON + executable lookup/formula cell recipes + soft-joint classification.",
+  "type": "module",
+  "main": "catalog/parser.js",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "private": true,
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": ""
+}

@@ -1,0 +1,129 @@
+{
+  "id": "recipe.number-theory-combinatorics__multiplication-table-mod-n",
+  "title": "Multiplication mod 5: (a,b) -> (a*b) mod 5",
+  "catalog_entry": "number-theory-combinatorics__multiplication-table-mod-n",
+  "family": "NUMBER THEORY & COMBINATORICS",
+  "catalog_name": "Multiplication table mod n",
+  "kind": "lookup",
+  "inputs": [
+    "a",
+    "b"
+  ],
+  "example_input": {
+    "a": "3",
+    "b": "4"
+  },
+  "expected_output": 2,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "cols": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "cells": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      [
+        0,
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        0,
+        4,
+        3,
+        2,
+        1
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.number-theory-combinatorics__multiplication-table-mod-n.data",
+        "kind": "value",
+        "value": {
+          "0": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "1": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4
+          },
+          "2": {
+            "0": 0,
+            "1": 2,
+            "2": 4,
+            "3": 1,
+            "4": 3
+          },
+          "3": {
+            "0": 0,
+            "1": 3,
+            "2": 1,
+            "3": 4,
+            "4": 2
+          },
+          "4": {
+            "0": 0,
+            "1": 4,
+            "2": 3,
+            "3": 2,
+            "4": 1
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.number-theory-combinatorics__multiplication-table-mod-n",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.number-theory-combinatorics__multiplication-table-mod-n.data\"][a][b]",
+        "deps": [
+          "quilt.lookup.number-theory-combinatorics__multiplication-table-mod-n.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

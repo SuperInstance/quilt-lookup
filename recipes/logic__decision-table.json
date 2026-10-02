@@ -1,0 +1,51 @@
+{
+  "id": "recipe.logic__decision-table",
+  "title": "Loan eligibility decision table (income x score)",
+  "catalog_entry": "logic__decision-table",
+  "family": "LOGIC",
+  "catalog_name": "Decision table",
+  "kind": "lookup",
+  "inputs": [
+    "profile"
+  ],
+  "example_input": {
+    "profile": "high/low"
+  },
+  "expected_output": "review",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "high/high": "approve",
+      "high/low": "review",
+      "low/high": "review",
+      "low/low": "decline"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.logic__decision-table.data",
+        "kind": "value",
+        "value": {
+          "high/high": "approve",
+          "high/low": "review",
+          "low/high": "review",
+          "low/low": "decline"
+        }
+      },
+      {
+        "id": "quilt.lookup.logic__decision-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.logic__decision-table.data\"][profile]",
+        "deps": [
+          "quilt.lookup.logic__decision-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

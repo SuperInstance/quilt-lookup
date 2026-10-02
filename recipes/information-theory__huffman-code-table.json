@@ -1,0 +1,51 @@
+{
+  "id": "recipe.information-theory__huffman-code-table",
+  "title": "Optimal prefix code for freqs a=8 b=4 c=2 d=1",
+  "catalog_entry": "information-theory__huffman-code-table",
+  "family": "INFORMATION THEORY",
+  "catalog_name": "Huffman code table",
+  "kind": "lookup",
+  "inputs": [
+    "symbol"
+  ],
+  "example_input": {
+    "symbol": "d"
+  },
+  "expected_output": "111",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "a": "0",
+      "b": "10",
+      "c": "110",
+      "d": "111"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.information-theory__huffman-code-table.data",
+        "kind": "value",
+        "value": {
+          "a": "0",
+          "b": "10",
+          "c": "110",
+          "d": "111"
+        }
+      },
+      {
+        "id": "quilt.lookup.information-theory__huffman-code-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.information-theory__huffman-code-table.data\"][symbol]",
+        "deps": [
+          "quilt.lookup.information-theory__huffman-code-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

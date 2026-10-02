@@ -1,0 +1,45 @@
+{
+  "id": "recipe.relations-functions__function-table",
+  "title": "Flat-rate tax bracket function (piecewise, not marginal)",
+  "catalog_entry": "relations-functions__function-table",
+  "family": "RELATIONS & FUNCTIONS",
+  "catalog_name": "Function table",
+  "kind": "lookup",
+  "inputs": [
+    "income"
+  ],
+  "example_input": {
+    "income": 50000
+  },
+  "expected_output": 0.22,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": "piecewise semantics: value of the greatest lower bound bucket",
+  "table_or_formula": {
+    "type": "piecewise",
+    "bounds": [
+      0,
+      10000,
+      40000,
+      85000
+    ],
+    "values": [
+      0,
+      0.1,
+      0.22,
+      0.32
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.relations-functions__function-table",
+        "kind": "formula",
+        "expr": "=income < 10000 ? 0 : income < 40000 ? 0.1 : income < 85000 ? 0.22 : 0.32",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

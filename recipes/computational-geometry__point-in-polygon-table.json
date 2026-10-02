@@ -1,0 +1,47 @@
+{
+  "id": "recipe.computational-geometry__point-in-polygon-table",
+  "title": "Even-odd rule: crossing parity -> in/out",
+  "catalog_entry": "computational-geometry__point-in-polygon-table",
+  "family": "COMPUTATIONAL GEOMETRY",
+  "catalog_name": "Point-in-polygon table",
+  "kind": "lookup",
+  "inputs": [
+    "crossings"
+  ],
+  "example_input": {
+    "crossings": "odd"
+  },
+  "expected_output": "inside",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "even": "outside",
+      "odd": "inside"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.computational-geometry__point-in-polygon-table.data",
+        "kind": "value",
+        "value": {
+          "even": "outside",
+          "odd": "inside"
+        }
+      },
+      {
+        "id": "quilt.lookup.computational-geometry__point-in-polygon-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.computational-geometry__point-in-polygon-table.data\"][crossings]",
+        "deps": [
+          "quilt.lookup.computational-geometry__point-in-polygon-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

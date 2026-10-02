@@ -1,0 +1,87 @@
+{
+  "id": "recipe.set-theory__power-set-table",
+  "title": "Power set inclusion for {p, q}: (subset, element) -> 1/0",
+  "catalog_entry": "set-theory__power-set-table",
+  "family": "SET THEORY",
+  "catalog_name": "Power set table",
+  "kind": "lookup",
+  "inputs": [
+    "subset",
+    "element"
+  ],
+  "example_input": {
+    "subset": "pq",
+    "element": "q"
+  },
+  "expected_output": 1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "none",
+      "p",
+      "q",
+      "pq"
+    ],
+    "cols": [
+      "p",
+      "q"
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.set-theory__power-set-table.data",
+        "kind": "value",
+        "value": {
+          "none": {
+            "p": 0,
+            "q": 0
+          },
+          "p": {
+            "p": 1,
+            "q": 0
+          },
+          "q": {
+            "p": 0,
+            "q": 1
+          },
+          "pq": {
+            "p": 1,
+            "q": 1
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.set-theory__power-set-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.set-theory__power-set-table.data\"][subset][element]",
+        "deps": [
+          "quilt.lookup.set-theory__power-set-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

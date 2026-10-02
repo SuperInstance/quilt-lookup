@@ -1,0 +1,69 @@
+{
+  "id": "recipe.game-theory__normal-form-table",
+  "title": "Prisoner's dilemma, row player's payoff (R=3 S=0 T=5 P=1)",
+  "catalog_entry": "game-theory__normal-form-table",
+  "family": "GAME THEORY",
+  "catalog_name": "Normal form table",
+  "kind": "lookup",
+  "inputs": [
+    "row",
+    "col"
+  ],
+  "example_input": {
+    "row": "cooperate",
+    "col": "defect"
+  },
+  "expected_output": 0,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "cooperate",
+      "defect"
+    ],
+    "cols": [
+      "cooperate",
+      "defect"
+    ],
+    "cells": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        1
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.game-theory__normal-form-table.data",
+        "kind": "value",
+        "value": {
+          "cooperate": {
+            "cooperate": 3,
+            "defect": 0
+          },
+          "defect": {
+            "cooperate": 5,
+            "defect": 1
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.game-theory__normal-form-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.game-theory__normal-form-table.data\"][row][col]",
+        "deps": [
+          "quilt.lookup.game-theory__normal-form-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

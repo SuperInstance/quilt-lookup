@@ -1,0 +1,14 @@
+{
+  "unparsed": [
+    {
+      "line": 1,
+      "text": "MATHEMATICAL SPREADSHEET TYPES (copy-paste friendly)",
+      "reason": "line before any family header"
+    },
+    {
+      "line": 150,
+      "text": "CONTINUED: MATHEMATICAL SPREADSHEET TYPES (copy-paste friendly)",
+      "reason": "unrecognized line inside family"
+    }
+  ]
+}

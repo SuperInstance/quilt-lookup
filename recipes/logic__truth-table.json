@@ -1,0 +1,105 @@
+{
+  "id": "recipe.logic__truth-table",
+  "title": "Two-input logic gates: (A,B) -> AND/OR/XOR/IMPLIES",
+  "catalog_entry": "logic__truth-table",
+  "family": "LOGIC",
+  "catalog_name": "Truth table",
+  "kind": "lookup",
+  "inputs": [
+    "ab",
+    "gate"
+  ],
+  "example_input": {
+    "ab": "TF",
+    "gate": "XOR"
+  },
+  "expected_output": 1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "TT",
+      "TF",
+      "FT",
+      "FF"
+    ],
+    "cols": [
+      "AND",
+      "OR",
+      "XOR",
+      "IMP"
+    ],
+    "cells": [
+      [
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.logic__truth-table.data",
+        "kind": "value",
+        "value": {
+          "TT": {
+            "AND": 1,
+            "OR": 1,
+            "XOR": 0,
+            "IMP": 1
+          },
+          "TF": {
+            "AND": 0,
+            "OR": 1,
+            "XOR": 1,
+            "IMP": 1
+          },
+          "FT": {
+            "AND": 0,
+            "OR": 1,
+            "XOR": 1,
+            "IMP": 0
+          },
+          "FF": {
+            "AND": 0,
+            "OR": 0,
+            "XOR": 0,
+            "IMP": 1
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.logic__truth-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.logic__truth-table.data\"][ab][gate]",
+        "deps": [
+          "quilt.lookup.logic__truth-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

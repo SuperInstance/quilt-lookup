@@ -1,0 +1,36 @@
+{
+  "id": "recipe.probability-statistics__relative-frequency-table",
+  "title": "Relative frequency = count / total",
+  "catalog_entry": "probability-statistics__relative-frequency-table",
+  "family": "PROBABILITY & STATISTICS",
+  "catalog_name": "Relative frequency table",
+  "kind": "formula",
+  "inputs": [
+    "count",
+    "total"
+  ],
+  "example_input": {
+    "count": 7,
+    "total": 24
+  },
+  "expected_output": 0.2916666666666667,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "count / total"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.probability-statistics__relative-frequency-table",
+        "kind": "formula",
+        "expr": "=count / total",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

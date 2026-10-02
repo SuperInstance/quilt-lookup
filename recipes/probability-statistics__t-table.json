@@ -1,0 +1,55 @@
+{
+  "id": "recipe.probability-statistics__t-table",
+  "title": "t critical values (two-tailed alpha=0.05) by df",
+  "catalog_entry": "probability-statistics__t-table",
+  "family": "PROBABILITY & STATISTICS",
+  "catalog_name": "T-table",
+  "kind": "lookup",
+  "inputs": [
+    "df"
+  ],
+  "example_input": {
+    "df": "3"
+  },
+  "expected_output": 3.182,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "1": 12.706,
+      "2": 4.303,
+      "3": 3.182,
+      "5": 2.571,
+      "10": 2.228,
+      "30": 2.042
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.probability-statistics__t-table.data",
+        "kind": "value",
+        "value": {
+          "1": 12.706,
+          "2": 4.303,
+          "3": 3.182,
+          "5": 2.571,
+          "10": 2.228,
+          "30": 2.042
+        }
+      },
+      {
+        "id": "quilt.lookup.probability-statistics__t-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.probability-statistics__t-table.data\"][df]",
+        "deps": [
+          "quilt.lookup.probability-statistics__t-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

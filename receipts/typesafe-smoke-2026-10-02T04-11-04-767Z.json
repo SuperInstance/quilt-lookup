@@ -1,0 +1,38 @@
+{
+  "kind": "typesafe-smoke",
+  "lane": "66-d",
+  "repo": "quilt-lookup",
+  "purpose": "classify 5 unseen catalog entries into the 4 decomposition classes; first data point for automating classification",
+  "entries": [
+    {
+      "id": "games__chess-puzzle-table",
+      "line": "- Chess puzzle table - piece, move - chess",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "oceanography__tide-table",
+      "line": "- Tide table - time, height - tide",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "type-theory__curry-howard-table",
+      "line": "- Curry-Howard table - propositions as types - proofs as programs",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "astronomy__telescope-table",
+      "line": "- Telescope table - instrument, specification - telescope",
+      "rule_engine_class": "pure-lookup"
+    },
+    {
+      "id": "philosophy__epistemology-table",
+      "line": "- Epistemology table - belief, justification - epistemology",
+      "rule_engine_class": "needs-dynamic-model"
+    }
+  ],
+  "model": "jev-latest",
+  "calls": 0,
+  "ts_utc": "2026-10-02T04:11:04.767Z",
+  "outcome": "failed",
+  "error": "systemone HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid request.\"}}"
+}

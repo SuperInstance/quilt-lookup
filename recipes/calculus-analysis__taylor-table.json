@@ -1,0 +1,51 @@
+{
+  "id": "recipe.calculus-analysis__taylor-table",
+  "title": "Derivative reference: elementary function -> derivative",
+  "catalog_entry": "calculus-analysis__taylor-table",
+  "family": "CALCULUS & ANALYSIS",
+  "catalog_name": "Taylor table",
+  "kind": "lookup",
+  "inputs": [
+    "fn"
+  ],
+  "example_input": {
+    "fn": "sin"
+  },
+  "expected_output": "cos",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "sin": "cos",
+      "cos": "-sin",
+      "exp": "exp",
+      "ln": "1/x"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.calculus-analysis__taylor-table.data",
+        "kind": "value",
+        "value": {
+          "sin": "cos",
+          "cos": "-sin",
+          "exp": "exp",
+          "ln": "1/x"
+        }
+      },
+      {
+        "id": "quilt.lookup.calculus-analysis__taylor-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.calculus-analysis__taylor-table.data\"][fn]",
+        "deps": [
+          "quilt.lookup.calculus-analysis__taylor-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

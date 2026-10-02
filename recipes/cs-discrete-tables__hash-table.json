@@ -1,0 +1,51 @@
+{
+  "id": "recipe.cs-discrete-tables__hash-table",
+  "title": "Consistent-hash shard map: key -> shard",
+  "catalog_entry": "cs-discrete-tables__hash-table",
+  "family": "CS & DISCRETE TABLES",
+  "catalog_name": "Hash table",
+  "kind": "lookup",
+  "inputs": [
+    "key"
+  ],
+  "example_input": {
+    "key": "session:abc"
+  },
+  "expected_output": "shard-1",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "user:42": "shard-3",
+      "user:17": "shard-0",
+      "session:abc": "shard-1",
+      "cart:9f2": "shard-2"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.cs-discrete-tables__hash-table.data",
+        "kind": "value",
+        "value": {
+          "user:42": "shard-3",
+          "user:17": "shard-0",
+          "session:abc": "shard-1",
+          "cart:9f2": "shard-2"
+        }
+      },
+      {
+        "id": "quilt.lookup.cs-discrete-tables__hash-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.cs-discrete-tables__hash-table.data\"][key]",
+        "deps": [
+          "quilt.lookup.cs-discrete-tables__hash-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

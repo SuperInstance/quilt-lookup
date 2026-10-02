@@ -1,0 +1,61 @@
+{
+  "id": "recipe.logic__state-transition-table",
+  "title": "Turnstile FSM: (state, event) -> next state",
+  "catalog_entry": "logic__state-transition-table",
+  "family": "LOGIC",
+  "catalog_name": "State transition table",
+  "kind": "lookup",
+  "inputs": [
+    "state",
+    "event"
+  ],
+  "example_input": {
+    "state": "locked",
+    "event": "coin"
+  },
+  "expected_output": "unlocked",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "nested-map",
+    "keys": {
+      "locked": {
+        "coin": "unlocked",
+        "push": "locked"
+      },
+      "unlocked": {
+        "coin": "unlocked",
+        "push": "locked"
+      }
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.logic__state-transition-table.data",
+        "kind": "value",
+        "value": {
+          "locked": {
+            "coin": "unlocked",
+            "push": "locked"
+          },
+          "unlocked": {
+            "coin": "unlocked",
+            "push": "locked"
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.logic__state-transition-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.logic__state-transition-table.data\"][state][event]",
+        "deps": [
+          "quilt.lookup.logic__state-transition-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

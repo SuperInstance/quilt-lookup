@@ -1,0 +1,13 @@
+COMPUTATIONAL GEOMETRY
+- Orientation table - point triples, cross-product sign - examples: left/right turn, convexity test
+- Point-in-polygon table - polygon, crossings parity - examples: hit testing, geofencing
+- Convex hull table - points, hull vertex order - examples: collision bounds, clustering
+- Segment intersection table - segment pairs, intersection flag - examples: maps, circuit layout
+- Voronoi adjacency table - sites, neighbor sites - examples: district maps, nearest facility
+- Delaunay edge table - triangles, shared edges - examples: meshing, terrain models
+- Distance bucket table - points, grid buckets - examples: spatial index, broad-phase collision
+- Sweep event table - x-coordinate, event type, segment - examples: line sweep, skylines
+- Winding number table - point, loops, winding count - examples: even-odd fill, shape booleans
+- Grid marching table - cell, ray crossing direction - examples: raycasting, game AI
+- Picking table - screen ray, object hit - examples: 3D editors, games
+- Closest pair table - point set, nearest pair - examples: collision detection, facility siting

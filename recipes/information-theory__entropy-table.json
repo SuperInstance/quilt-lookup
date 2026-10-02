@@ -1,0 +1,38 @@
+{
+  "id": "recipe.information-theory__entropy-table",
+  "title": "Surprisal of an outcome: -log2(p)",
+  "catalog_entry": "information-theory__entropy-table",
+  "family": "INFORMATION THEORY",
+  "catalog_name": "Entropy table",
+  "kind": "formula",
+  "inputs": [
+    "p"
+  ],
+  "example_input": {
+    "p": 0.25
+  },
+  "expected_output": 2,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "-Math.log2(p)"
+  },
+  "helpers": [
+    "Math"
+  ],
+  "arena_compat_note": "arena formula helpers are abs/min/max/clamp; Math is needed here — flagged for engine parity",
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.information-theory__entropy-table",
+        "kind": "formula",
+        "expr": "=-Math.log2(p)",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

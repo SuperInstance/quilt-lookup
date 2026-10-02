@@ -1,0 +1,47 @@
+{
+  "id": "recipe.dynamical-systems__fixed-point-table",
+  "title": "Logistic map x(n+1)=2x(1-x): fixed points and stability",
+  "catalog_entry": "dynamical-systems__fixed-point-table",
+  "family": "DYNAMICAL SYSTEMS",
+  "catalog_name": "Fixed point table",
+  "kind": "lookup",
+  "inputs": [
+    "point"
+  ],
+  "example_input": {
+    "point": "0.5"
+  },
+  "expected_output": "stable",
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": "multiplier |f'|: 2 at x=0 (unstable), 0 at x=1/2 (stable) at r=2",
+  "table_or_formula": {
+    "type": "map",
+    "keys": {
+      "0": "unstable",
+      "0.5": "stable"
+    }
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.dynamical-systems__fixed-point-table.data",
+        "kind": "value",
+        "value": {
+          "0": "unstable",
+          "0.5": "stable"
+        }
+      },
+      {
+        "id": "quilt.lookup.dynamical-systems__fixed-point-table",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.dynamical-systems__fixed-point-table.data\"][point]",
+        "deps": [
+          "quilt.lookup.dynamical-systems__fixed-point-table.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

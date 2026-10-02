@@ -1,0 +1,44 @@
+{
+  "id": "recipe.computational-geometry__orientation-table",
+  "title": "Orientation sign of ordered triple (a,b,c): sign((b-a) x (c-a))",
+  "catalog_entry": "computational-geometry__orientation-table",
+  "family": "COMPUTATIONAL GEOMETRY",
+  "catalog_name": "Orientation table",
+  "kind": "formula",
+  "inputs": [
+    "ax",
+    "ay",
+    "bx",
+    "by",
+    "cx",
+    "cy"
+  ],
+  "example_input": {
+    "ax": 0,
+    "ay": 0,
+    "bx": 1,
+    "by": 0,
+    "cx": 1,
+    "cy": 1
+  },
+  "expected_output": 1,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "((bx - ax) * (cy - ay) - (by - ay) * (cx - ax) > 0) ? 1 : (((bx - ax) * (cy - ay) - (by - ay) * (cx - ax) < 0) ? -1 : 0)"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.computational-geometry__orientation-table",
+        "kind": "formula",
+        "expr": "=((bx - ax) * (cy - ay) - (by - ay) * (cx - ax) > 0) ? 1 : (((bx - ax) * (cy - ay) - (by - ay) * (cx - ax) < 0) ? -1 : 0)",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "recipe.linear-algebra__confusion-matrix",
+  "title": "Confusion matrix cell: (predicted, actual) -> count",
+  "catalog_entry": "linear-algebra__confusion-matrix",
+  "family": "LINEAR ALGEBRA",
+  "catalog_name": "Confusion matrix",
+  "kind": "lookup",
+  "inputs": [
+    "predicted",
+    "actual"
+  ],
+  "example_input": {
+    "predicted": "pred-neg",
+    "actual": "actual-pos"
+  },
+  "expected_output": 10,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "matrix",
+    "rows": [
+      "pred-pos",
+      "pred-neg"
+    ],
+    "cols": [
+      "actual-pos",
+      "actual-neg"
+    ],
+    "cells": [
+      [
+        45,
+        5
+      ],
+      [
+        10,
+        40
+      ]
+    ]
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.linear-algebra__confusion-matrix.data",
+        "kind": "value",
+        "value": {
+          "pred-pos": {
+            "actual-pos": 45,
+            "actual-neg": 5
+          },
+          "pred-neg": {
+            "actual-pos": 10,
+            "actual-neg": 40
+          }
+        }
+      },
+      {
+        "id": "quilt.lookup.linear-algebra__confusion-matrix",
+        "kind": "formula",
+        "expr": "=cells[\"quilt.lookup.linear-algebra__confusion-matrix.data\"][predicted][actual]",
+        "deps": [
+          "quilt.lookup.linear-algebra__confusion-matrix.data"
+        ],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

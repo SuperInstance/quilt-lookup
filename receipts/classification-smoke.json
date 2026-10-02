@@ -1,0 +1,16 @@
+{
+  "kind": "classification-smoke",
+  "at_utc": "2026-10-02T04:34:53.109Z",
+  "http": 200,
+  "usage": {
+    "input_tokens": 1010,
+    "output_tokens": 304
+  },
+  "answers": {
+    "e0": "pure-lookup",
+    "e1": "pure-lookup",
+    "e2": "pure-lookup",
+    "e3": "pure-lookup",
+    "e4": "greeter-territory"
+  }
+}

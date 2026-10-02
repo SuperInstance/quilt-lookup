@@ -1,0 +1,36 @@
+{
+  "id": "recipe.quantum-computing__measurement-table",
+  "title": "Born rule for |0>: P(0) = |a|^2",
+  "catalog_entry": "quantum-computing__measurement-table",
+  "family": "QUANTUM COMPUTING",
+  "catalog_name": "Measurement table",
+  "kind": "formula",
+  "inputs": [
+    "a",
+    "b"
+  ],
+  "example_input": {
+    "a": 0.7071067811865476,
+    "b": 0.7071067811865476
+  },
+  "expected_output": 0.5,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": "b (|1> amplitude) is declared but unused by this outcome cell",
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "a * a"
+  },
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.quantum-computing__measurement-table",
+        "kind": "formula",
+        "expr": "=a * a",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}

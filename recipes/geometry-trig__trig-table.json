@@ -1,0 +1,38 @@
+{
+  "id": "recipe.geometry-trig__trig-table",
+  "title": "sin(x) for any x (radians) — the continuous completion of the printed table",
+  "catalog_entry": "geometry-trig__trig-table",
+  "family": "GEOMETRY & TRIG",
+  "catalog_name": "Trig table",
+  "kind": "formula",
+  "inputs": [
+    "x"
+  ],
+  "example_input": {
+    "x": 1
+  },
+  "expected_output": 0.8414709848078965,
+  "source": "wave-66 lane 66-d (hand-authored; example machine-checked by src/validate.js)",
+  "notes": null,
+  "table_or_formula": {
+    "type": "expr",
+    "expr": "Math.sin(x)"
+  },
+  "helpers": [
+    "Math"
+  ],
+  "arena_compat_note": "arena formula helpers are abs/min/max/clamp; Math is needed here — flagged for engine parity",
+  "arena": {
+    "note": "CellDef fragments compatible with @quilt/core types.d.ts; bare input identifiers are cells supplied by the hosting sheet",
+    "cells": [
+      {
+        "id": "quilt.lookup.geometry-trig__trig-table",
+        "kind": "formula",
+        "expr": "=Math.sin(x)",
+        "deps": [],
+        "inputType": "recipe inputs (see inputs[])",
+        "outputType": "expected_output shape"
+      }
+    ]
+  }
+}
