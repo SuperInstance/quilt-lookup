@@ -4,241 +4,241 @@
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Set membership table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "power-set-table": {
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Power set table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "cartesian-product-table": {
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Cartesian product table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "venn-region-table": {
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Venn region table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "inclusion-exclusion-table": {
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Inclusion-exclusion table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "cardinality-table": {
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Cardinality table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "partition-table": {
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Partition table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "equivalence-class-table": {
       "class": "pure-lookup",
       "family": "SET THEORY",
       "name": "Equivalence class table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family SET THEORY is deterministic mathematics — the table is the answer"
     },
     "binary-relation-matrix": {
       "class": "pure-lookup",
       "family": "RELATIONS & FUNCTIONS",
       "name": "Binary relation matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family RELATIONS & FUNCTIONS is deterministic mathematics — the table is the answer"
     },
     "relation-tuple-table": {
       "class": "pure-lookup",
       "family": "RELATIONS & FUNCTIONS",
       "name": "Relation tuple table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family RELATIONS & FUNCTIONS is deterministic mathematics — the table is the answer"
     },
     "function-table": {
       "class": "pure-lookup",
       "family": "RELATIONS & FUNCTIONS",
       "name": "Function table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family RELATIONS & FUNCTIONS is deterministic mathematics — the table is the answer"
     },
     "injection-surjection-bijection-table": {
       "class": "pure-lookup",
       "family": "RELATIONS & FUNCTIONS",
       "name": "Injection/surjection/bijection table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family RELATIONS & FUNCTIONS is deterministic mathematics — the table is the answer"
     },
     "composition-table": {
       "class": "pure-lookup",
       "family": "RELATIONS & FUNCTIONS",
       "name": "Composition table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family RELATIONS & FUNCTIONS is deterministic mathematics — the table is the answer"
     },
     "transitive-closure-table": {
       "class": "pure-lookup",
       "family": "RELATIONS & FUNCTIONS",
       "name": "Transitive closure table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family RELATIONS & FUNCTIONS is deterministic mathematics — the table is the answer"
     },
     "truth-table": {
       "class": "pure-lookup",
       "family": "LOGIC",
       "name": "Truth table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LOGIC is deterministic mathematics — the table is the answer"
     },
     "karnaugh-map": {
       "class": "pure-lookup",
       "family": "LOGIC",
       "name": "Karnaugh map",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LOGIC is deterministic mathematics — the table is the answer"
     },
     "boolean-matrix": {
       "class": "pure-lookup",
       "family": "LOGIC",
       "name": "Boolean matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LOGIC is deterministic mathematics — the table is the answer"
     },
     "decision-table": {
       "class": "pure-lookup",
       "family": "LOGIC",
       "name": "Decision table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LOGIC is deterministic mathematics — the table is the answer"
     },
     "state-transition-table": {
       "class": "pure-lookup",
       "family": "LOGIC",
       "name": "State transition table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LOGIC is deterministic mathematics — the table is the answer"
     },
     "turing-machine-table": {
       "class": "pure-lookup",
       "family": "LOGIC",
       "name": "Turing machine table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LOGIC is deterministic mathematics — the table is the answer"
     },
     "matrix-table": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Matrix table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "vector-table": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Vector table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "tensor-table": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Tensor table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "sparse-matrix-table": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Sparse matrix table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "banded-toeplitz-hankel-table": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Banded/Toeplitz/Hankel table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "covariance-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Covariance matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "correlation-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Correlation matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "distance-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Distance matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "similarity-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Similarity matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "confusion-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Confusion matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "design-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Design matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "jacobian-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Jacobian matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "hessian-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Hessian matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "gram-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Gram matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "laplacian-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Laplacian matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "adjacency-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Adjacency matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "incidence-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Incidence matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "transition-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Transition matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "stochastic-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Stochastic matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "rotation-transformation-matrix": {
       "class": "pure-lookup",
       "family": "LINEAR ALGEBRA",
       "name": "Rotation/transformation matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family LINEAR ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "frequency-table": {
       "class": "lookup-with-weights",
@@ -454,205 +454,205 @@
       "class": "lookup-with-weights",
       "family": "GRAPH & NETWORK",
       "name": "Edge list",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GRAPH & NETWORK is deterministic mathematics — the table is the answer"
     },
     "node-table": {
       "class": "pure-lookup",
       "family": "GRAPH & NETWORK",
       "name": "Node table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GRAPH & NETWORK is deterministic mathematics — the table is the answer"
     },
     "degree-table": {
       "class": "pure-lookup",
       "family": "GRAPH & NETWORK",
       "name": "Degree table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GRAPH & NETWORK is deterministic mathematics — the table is the answer"
     },
     "shortest-path-table": {
       "class": "pure-lookup",
       "family": "GRAPH & NETWORK",
       "name": "Shortest path table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GRAPH & NETWORK is deterministic mathematics — the table is the answer"
     },
     "flow-network-table": {
       "class": "pure-lookup",
       "family": "GRAPH & NETWORK",
       "name": "Flow network table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GRAPH & NETWORK is deterministic mathematics — the table is the answer"
     },
     "matching-table": {
       "class": "pure-lookup",
       "family": "GRAPH & NETWORK",
       "name": "Matching table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GRAPH & NETWORK is deterministic mathematics — the table is the answer"
     },
     "centrality-table": {
       "class": "pure-lookup",
       "family": "GRAPH & NETWORK",
       "name": "Centrality table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GRAPH & NETWORK is deterministic mathematics — the table is the answer"
     },
     "poset-table": {
       "class": "pure-lookup",
       "family": "ORDER & LATTICE",
       "name": "Poset table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ORDER & LATTICE is deterministic mathematics — the table is the answer"
     },
     "hasse-diagram-table": {
       "class": "pure-lookup",
       "family": "ORDER & LATTICE",
       "name": "Hasse diagram table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ORDER & LATTICE is deterministic mathematics — the table is the answer"
     },
     "lattice-table": {
       "class": "pure-lookup",
       "family": "ORDER & LATTICE",
       "name": "Lattice table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ORDER & LATTICE is deterministic mathematics — the table is the answer"
     },
     "ranking-table": {
       "class": "lookup-with-weights",
       "family": "ORDER & LATTICE",
       "name": "Ranking table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ORDER & LATTICE is deterministic mathematics — the table is the answer"
     },
     "cayley-table": {
       "class": "pure-lookup",
       "family": "ALGEBRA",
       "name": "Cayley table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "addition-multiplication-table": {
       "class": "pure-lookup",
       "family": "ALGEBRA",
       "name": "Addition/multiplication table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "group-ring-field-table": {
       "class": "pure-lookup",
       "family": "ALGEBRA",
       "name": "Group/ring/field table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "boolean-algebra-table": {
       "class": "pure-lookup",
       "family": "ALGEBRA",
       "name": "Boolean algebra table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family ALGEBRA is deterministic mathematics — the table is the answer"
     },
     "difference-table": {
       "class": "pure-lookup",
       "family": "CALCULUS & ANALYSIS",
       "name": "Difference table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CALCULUS & ANALYSIS is deterministic mathematics — the table is the answer"
     },
     "divided-difference-table": {
       "class": "pure-lookup",
       "family": "CALCULUS & ANALYSIS",
       "name": "Divided difference table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CALCULUS & ANALYSIS is deterministic mathematics — the table is the answer"
     },
     "taylor-table": {
       "class": "pure-lookup",
       "family": "CALCULUS & ANALYSIS",
       "name": "Taylor table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CALCULUS & ANALYSIS is deterministic mathematics — the table is the answer"
     },
     "integral-table": {
       "class": "pure-lookup",
       "family": "CALCULUS & ANALYSIS",
       "name": "Integral table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CALCULUS & ANALYSIS is deterministic mathematics — the table is the answer"
     },
     "laplace-z-transform-table": {
       "class": "pure-lookup",
       "family": "CALCULUS & ANALYSIS",
       "name": "Laplace/Z transform table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CALCULUS & ANALYSIS is deterministic mathematics — the table is the answer"
     },
     "fourier-table": {
       "class": "pure-lookup",
       "family": "CALCULUS & ANALYSIS",
       "name": "Fourier table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CALCULUS & ANALYSIS is deterministic mathematics — the table is the answer"
     },
     "multiplication-table-mod-n": {
       "class": "pure-lookup",
       "family": "NUMBER THEORY & COMBINATORICS",
       "name": "Multiplication table mod n",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family NUMBER THEORY & COMBINATORICS is deterministic mathematics — the table is the answer"
     },
     "prime-table": {
       "class": "pure-lookup",
       "family": "NUMBER THEORY & COMBINATORICS",
       "name": "Prime table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family NUMBER THEORY & COMBINATORICS is deterministic mathematics — the table is the answer"
     },
     "sieve-table": {
       "class": "pure-lookup",
       "family": "NUMBER THEORY & COMBINATORICS",
       "name": "Sieve table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family NUMBER THEORY & COMBINATORICS is deterministic mathematics — the table is the answer"
     },
     "pascal-s-triangle": {
       "class": "pure-lookup",
       "family": "NUMBER THEORY & COMBINATORICS",
       "name": "Pascal's triangle",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family NUMBER THEORY & COMBINATORICS is deterministic mathematics — the table is the answer"
     },
     "binomial-table": {
       "class": "pure-lookup",
       "family": "NUMBER THEORY & COMBINATORICS",
       "name": "Binomial table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family NUMBER THEORY & COMBINATORICS is deterministic mathematics — the table is the answer"
     },
     "stirling-numbers-table": {
       "class": "pure-lookup",
       "family": "NUMBER THEORY & COMBINATORICS",
       "name": "Stirling numbers table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family NUMBER THEORY & COMBINATORICS is deterministic mathematics — the table is the answer"
     },
     "partition-table-2": {
       "class": "pure-lookup",
       "family": "NUMBER THEORY & COMBINATORICS",
       "name": "Partition table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family NUMBER THEORY & COMBINATORICS is deterministic mathematics — the table is the answer"
     },
     "hash-table": {
       "class": "pure-lookup",
       "family": "CS & DISCRETE TABLES",
       "name": "Hash table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CS & DISCRETE TABLES is deterministic mathematics — the table is the answer"
     },
     "symbol-table": {
       "class": "pure-lookup",
       "family": "CS & DISCRETE TABLES",
       "name": "Symbol table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CS & DISCRETE TABLES is deterministic mathematics — the table is the answer"
     },
     "routing-table": {
       "class": "pure-lookup",
       "family": "CS & DISCRETE TABLES",
       "name": "Routing table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CS & DISCRETE TABLES is deterministic mathematics — the table is the answer"
     },
     "state-table": {
       "class": "pure-lookup",
       "family": "CS & DISCRETE TABLES",
       "name": "State table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CS & DISCRETE TABLES is deterministic mathematics — the table is the answer"
     },
     "instruction-table": {
       "class": "pure-lookup",
       "family": "CS & DISCRETE TABLES",
       "name": "Instruction table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CS & DISCRETE TABLES is deterministic mathematics — the table is the answer"
     },
     "opcode-table": {
       "class": "pure-lookup",
       "family": "CS & DISCRETE TABLES",
       "name": "Opcode table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CS & DISCRETE TABLES is deterministic mathematics — the table is the answer"
     },
     "regret-matrix": {
       "class": "lookup-with-weights",
@@ -1456,61 +1456,61 @@
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Entropy table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "joint-entropy-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Joint entropy table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "conditional-entropy-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Conditional entropy table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "mutual-information-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Mutual information table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "channel-capacity-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Channel capacity table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "rate-distortion-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Rate-distortion table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "huffman-code-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Huffman code table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "arithmetic-code-table": {
       "class": "lookup-with-weights",
       "family": "INFORMATION THEORY",
       "name": "Arithmetic code table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "lempel-ziv-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Lempel-Ziv table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "kolmogorov-complexity-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Kolmogorov complexity table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "linear-code-table": {
       "class": "lookup-with-weights",
@@ -1720,73 +1720,73 @@
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Flow table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "map-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Map table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "fixed-point-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Fixed point table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "stability-table-3": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Stability table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "bifurcation-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Bifurcation table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "chaos-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Chaos table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "attractor-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Attractor table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "lyapunov-exponent-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Lyapunov exponent table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "poincar-section-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Poincaré section table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "return-map-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Return map table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "invariant-measure-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Invariant measure table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "ergodic-theory-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Ergodic theory table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "self-similarity-table": {
       "class": "lookup-with-weights",
@@ -2440,67 +2440,67 @@
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Normal form table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "extensive-form-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Extensive form table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "nash-equilibrium-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Nash equilibrium table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "mixed-strategy-table": {
       "class": "needs-dynamic-model",
       "family": "GAME THEORY",
       "name": "Mixed strategy table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "cooperative-game-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Cooperative game table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "shapley-value-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Shapley value table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "core-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Core table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "bargaining-set-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Bargaining set table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "auction-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Auction table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "mechanism-design-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Mechanism design table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "revelation-principle-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Revelation principle table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "preference-table": {
       "class": "lookup-with-weights",
@@ -3292,61 +3292,61 @@
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "State-space table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "transfer-function-table": {
       "class": "lookup-with-weights",
       "family": "CONTROL THEORY",
       "name": "Transfer function table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "pid-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "PID table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "root-locus-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Root locus table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "bode-plot-table": {
       "class": "lookup-with-weights",
       "family": "CONTROL THEORY",
       "name": "Bode plot table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "nyquist-plot-table": {
       "class": "lookup-with-weights",
       "family": "CONTROL THEORY",
       "name": "Nyquist plot table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "stability-table-4": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Stability table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "controllability-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Controllability table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "observability-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Observability table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "optimal-control-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Optimal control table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "fourier-table-2": {
       "class": "lookup-with-weights",
@@ -5932,239 +5932,317 @@
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Entropy table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "channel-capacity-table-2": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Channel capacity table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "codebook-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Codebook table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "rate-distortion-table-2": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Rate-distortion table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "mutual-information-table-2": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Mutual information table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "typewriter-channel-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Typewriter channel table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "redundancy-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "Redundancy table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "kl-divergence-table": {
       "class": "pure-lookup",
       "family": "INFORMATION THEORY",
       "name": "KL divergence table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family INFORMATION THEORY is deterministic mathematics — the table is the answer"
     },
     "payoff-matrix-2": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Payoff matrix",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "best-response-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Best response table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "nash-table": {
       "class": "needs-dynamic-model",
       "family": "GAME THEORY",
       "name": "Nash table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "zero-sum-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Zero-sum table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "extensive-form-table-2": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Extensive form table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "auction-table-2": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Auction table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "cooperative-table": {
       "class": "pure-lookup",
       "family": "GAME THEORY",
       "name": "Cooperative table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "repeated-game-table": {
       "class": "lookup-with-weights",
       "family": "GAME THEORY",
       "name": "Repeated game table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family GAME THEORY is deterministic mathematics — the table is the answer"
     },
     "state-space-table-2": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "State-space table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "gain-margin-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Gain margin table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "phase-margin-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Phase margin table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "bode-table": {
       "class": "lookup-with-weights",
       "family": "CONTROL THEORY",
       "name": "Bode table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "nyquist-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Nyquist table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "setpoint-table": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Setpoint table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "observability-table-2": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Observability table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "controllability-table-2": {
       "class": "pure-lookup",
       "family": "CONTROL THEORY",
       "name": "Controllability table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family CONTROL THEORY is deterministic mathematics — the table is the answer"
     },
     "poincare-section-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Poincare section table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "bifurcation-table-2": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Bifurcation table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "lyapunov-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Lyapunov table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "phase-portrait-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Phase portrait table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "limit-cycle-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Limit cycle table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "basin-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Basin table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "return-map-table-2": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Return map table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "cellular-automaton-table": {
       "class": "pure-lookup",
       "family": "DYNAMICAL SYSTEMS",
       "name": "Cellular automaton table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family DYNAMICAL SYSTEMS is deterministic mathematics — the table is the answer"
     },
     "adjacency-table-2": {
       "class": "pure-lookup",
       "family": "TOPOLOGY & STRUCTURE",
       "name": "Adjacency table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family TOPOLOGY & STRUCTURE is deterministic mathematics — the table is the answer"
     },
     "incidence-table-2": {
       "class": "pure-lookup",
       "family": "TOPOLOGY & STRUCTURE",
       "name": "Incidence table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family TOPOLOGY & STRUCTURE is deterministic mathematics — the table is the answer"
     },
     "euler-characteristic-table-2": {
       "class": "pure-lookup",
       "family": "TOPOLOGY & STRUCTURE",
       "name": "Euler characteristic table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family TOPOLOGY & STRUCTURE is deterministic mathematics — the table is the answer"
     },
     "covering-table": {
       "class": "pure-lookup",
       "family": "TOPOLOGY & STRUCTURE",
       "name": "Covering table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family TOPOLOGY & STRUCTURE is deterministic mathematics — the table is the answer"
     },
     "homology-table": {
       "class": "pure-lookup",
       "family": "TOPOLOGY & STRUCTURE",
       "name": "Homology table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family TOPOLOGY & STRUCTURE is deterministic mathematics — the table is the answer"
     },
     "manifold-chart-table": {
       "class": "pure-lookup",
       "family": "TOPOLOGY & STRUCTURE",
       "name": "Manifold chart table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family TOPOLOGY & STRUCTURE is deterministic mathematics — the table is the answer"
     },
     "knot-invariant-table": {
       "class": "pure-lookup",
       "family": "TOPOLOGY & STRUCTURE",
       "name": "Knot invariant table",
-      "reason": "tabular surface with tunable rows; revisit on freezing-test evidence"
+      "reason": "family TOPOLOGY & STRUCTURE is deterministic mathematics — the table is the answer"
+    },
+    "mean-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Mean table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "median-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Median table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "mode-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Mode table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "quartile-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Quartile table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "iqr-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "IQR table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "five-number-summary-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Five-number summary table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "range-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Range table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "percentile-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Percentile table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "skewness-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Skewness table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "kurtosis-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Kurtosis table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "moving-average-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Moving-average table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "ewma-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "EWMA table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
+    },
+    "coefficient-of-variation-table": {
+      "class": "pure-lookup",
+      "family": "SUMMARY STATISTICS",
+      "name": "Coefficient of variation table",
+      "reason": "family SUMMARY STATISTICS is deterministic mathematics — the table is the answer"
     }
   },
   "counts": {
-    "pure-lookup": 146,
+    "pure-lookup": 159,
     "lookup-with-weights": 839,
     "needs-dynamic-model": 32,
     "greeter-territory": 10

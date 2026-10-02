@@ -65,6 +65,27 @@
         "- Manifold chart table - rows=charts, cols=coordinates, overlaps - examples: atlas construction, sensor frames",
         "- Knot invariant table - rows=knots, cols=crossings, polynomials - examples: dna supercoils, link diagrams"
       ]
+    },
+    {
+      "name": "SUMMARY STATISTICS",
+      "wave": "wave-67",
+      "added_by": "lane 67-b",
+      "entries": [
+        "- Mean table - rows=groups, cols=arithmetic mean, n - examples: gradebooks, sales rollups",
+        "- Median table - rows=groups, cols=middle value - examples: income reports, latency dashboards",
+        "- Mode table - rows=values, cols=counts - examples: shoe sizes, defect categories",
+        "- Quartile table - rows=groups, cols=Q1, Q2, Q3 - examples: box plots, salary bands",
+        "- IQR table - rows=groups, cols=Q3-Q1, outlier fences - examples: fraud screening, lab QC",
+        "- Five-number summary table - rows=groups, cols=min, Q1, median, Q3, max - examples: box plots, data audits",
+        "- Range table - rows=groups, cols=max-min - examples: temperature logs, delivery windows",
+        "- Percentile table - rows=percent ranks, cols=cutoffs - examples: growth charts, test scores",
+        "- Skewness table - rows=groups, cols=tilt, direction - examples: return distributions, delivery times",
+        "- Kurtosis table - rows=groups, cols=tail weight - examples: risk reports, quality control",
+        "- Moving-average table - rows=periods, cols=window mean - examples: stock charts, demand smoothing",
+        "- EWMA table - rows=periods, cols=smoothed value, alpha - examples: sensor smoothing, volatility tracking",
+        "- Coefficient of variation table - rows=groups, cols=mean/std, relative spread - examples: lab assays, portfolio risk"
+      ]
     }
-  ]
+  ],
+  "provenance_wave67": "SUMMARY STATISTICS appended by lane 67-b (wave-67) — the gap wave-66's own recipes exposed; existing families and entries untouched (append-only law)"
 }

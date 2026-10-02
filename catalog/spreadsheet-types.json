@@ -8457,6 +8457,143 @@
         }
       ],
       "source": "wave-66-extension"
+    },
+    {
+      "name": "SUMMARY STATISTICS",
+      "source_line": 50,
+      "entries": [
+        {
+          "id": "mean-table",
+          "name": "Mean table",
+          "shape": "rows=groups, cols=arithmetic mean, n",
+          "examples": [
+            "gradebooks",
+            "sales rollups"
+          ],
+          "source_line": 51
+        },
+        {
+          "id": "median-table",
+          "name": "Median table",
+          "shape": "rows=groups, cols=middle value",
+          "examples": [
+            "income reports",
+            "latency dashboards"
+          ],
+          "source_line": 52
+        },
+        {
+          "id": "mode-table",
+          "name": "Mode table",
+          "shape": "rows=values, cols=counts",
+          "examples": [
+            "shoe sizes",
+            "defect categories"
+          ],
+          "source_line": 53
+        },
+        {
+          "id": "quartile-table",
+          "name": "Quartile table",
+          "shape": "rows=groups, cols=Q1, Q2, Q3",
+          "examples": [
+            "box plots",
+            "salary bands"
+          ],
+          "source_line": 54
+        },
+        {
+          "id": "iqr-table",
+          "name": "IQR table",
+          "shape": "rows=groups, cols=Q3-Q1, outlier fences",
+          "examples": [
+            "fraud screening",
+            "lab QC"
+          ],
+          "source_line": 55
+        },
+        {
+          "id": "five-number-summary-table",
+          "name": "Five-number summary table",
+          "shape": "rows=groups, cols=min, Q1, median, Q3, max",
+          "examples": [
+            "box plots",
+            "data audits"
+          ],
+          "source_line": 56
+        },
+        {
+          "id": "range-table",
+          "name": "Range table",
+          "shape": "rows=groups, cols=max-min",
+          "examples": [
+            "temperature logs",
+            "delivery windows"
+          ],
+          "source_line": 57
+        },
+        {
+          "id": "percentile-table",
+          "name": "Percentile table",
+          "shape": "rows=percent ranks, cols=cutoffs",
+          "examples": [
+            "growth charts",
+            "test scores"
+          ],
+          "source_line": 58
+        },
+        {
+          "id": "skewness-table",
+          "name": "Skewness table",
+          "shape": "rows=groups, cols=tilt, direction",
+          "examples": [
+            "return distributions",
+            "delivery times"
+          ],
+          "source_line": 59
+        },
+        {
+          "id": "kurtosis-table",
+          "name": "Kurtosis table",
+          "shape": "rows=groups, cols=tail weight",
+          "examples": [
+            "risk reports",
+            "quality control"
+          ],
+          "source_line": 60
+        },
+        {
+          "id": "moving-average-table",
+          "name": "Moving-average table",
+          "shape": "rows=periods, cols=window mean",
+          "examples": [
+            "stock charts",
+            "demand smoothing"
+          ],
+          "source_line": 61
+        },
+        {
+          "id": "ewma-table",
+          "name": "EWMA table",
+          "shape": "rows=periods, cols=smoothed value, alpha",
+          "examples": [
+            "sensor smoothing",
+            "volatility tracking"
+          ],
+          "source_line": 62
+        },
+        {
+          "id": "coefficient-of-variation-table",
+          "name": "Coefficient of variation table",
+          "shape": "rows=groups, cols=mean/std, relative spread",
+          "examples": [
+            "lab assays",
+            "portfolio risk"
+          ],
+          "source_line": 63
+        }
+      ],
+      "source": "wave-67-extension"
     }
   ],
   "unparsed": [
@@ -8472,9 +8609,14 @@
     }
   ],
   "census": {
-    "families": 103,
-    "entries": 1027,
+    "families": 104,
+    "entries": 1040,
     "base_entries": 988,
-    "extension_entries": 39
+    "extension_entries": 52,
+    "extension_entries_by_wave": {
+      "wave-66-extension": 39,
+      "wave-67-extension": 13
+    },
+    "idempotent_strip": 6
   }
 }

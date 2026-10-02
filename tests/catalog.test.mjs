@@ -57,6 +57,15 @@ test('extensions follow the principal\'s style: name + shape segments, examples 
   }
 });
 
+test('wave-67: SUMMARY STATISTICS family exists with >= 10 entries and wave-67 provenance', () => {
+  const fam = onDisk.families.find(f => f.name === 'SUMMARY STATISTICS');
+  assert.ok(fam, 'SUMMARY STATISTICS family missing from the merged catalog');
+  assert.ok(fam.entries.length >= 10, `only ${fam.entries.length} entries`);
+  assert.equal(fam.source, 'wave-67-extension', 'provenance must say wave-67, not wave-66');
+  // principal's style holds for the new family too
+  for (const e of fam.entries) assert.ok(e.id && e.name && e.source_line > 0);
+});
+
 test('extension entries merged with provenance; ids globally unique after suffixing', () => {
   const extFams = onDisk.families.filter(f => f.source === 'wave-66-extension');
   assert.ok(extFams.length >= 4);

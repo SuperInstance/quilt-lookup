@@ -26,12 +26,19 @@ const PURE_FAMILIES = new Set([
   'SET THEORY', 'RELATIONS & FUNCTIONS', 'LOGIC', 'LINEAR ALGEBRA', 'GRAPH & NETWORK',
   'ORDER & LATTICE', 'NUMBER THEORY & COMBINATORICS', 'CS & DISCRETE TABLES',
   'INFORMATION THEORY', 'GAME THEORY', 'CONTROL THEORY', 'DYNAMICAL SYSTEMS',
-  'TOPOLOGY & STRUCTURE', 'ALGEBRA', 'CALCULUS & ANALYSIS',
+  'TOPOLOGY & STRUCTURE', 'SUMMARY STATISTICS', 'ALGEBRA', 'CALCULUS & ANALYSIS',
 ]);
 
 export function classifyEntry(entry, family) {
   const text = `${entry.name} ${entry.shape || ''}`.toLowerCase();
-  for (const r of RULES) {
+  // greeter-territory FIRST: these must never be ground into tables
+  const [greeter, ...rest] = RULES;
+  if (greeter.kw.some(k => text.includes(k))) return greeter.cls;
+  // wave-67 guard: 'five-number summary' contains 'summar' and would misfire into
+  // needs-dynamic-model (a text-summarization keyword) — but a summary-statistics
+  // table is deterministic arithmetic; the family outranks the keyword.
+  if (family === 'SUMMARY STATISTICS') return 'pure-lookup';
+  for (const r of rest) {
     if (r.kw.some(k => text.includes(k))) return r.cls;
   }
   if (PURE_FAMILIES.has(family)) return 'pure-lookup';
@@ -44,7 +51,7 @@ export function classifyCatalog(catalogJson) {
   for (const fam of catalogJson.families) {
     for (const e of fam.entries) {
       const cls = classifyEntry(e, fam.name);
-      out[e.id] = { class: cls, family: fam.name, name: e.name, reason: ruleReason(e, fam) };
+      out[e.id] = { class: cls, family: fam.name, name: e.name, reason: ruleReason(e, fam.name) };
       counts[cls] += 1;
     }
   }

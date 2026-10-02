@@ -8,8 +8,16 @@ import { classifyCatalog } from '../src/softjoint-tags.js';
 
 const onDisk = JSON.parse(fs.readFileSync(new URL('../catalog/spreadsheet-types.json', import.meta.url), 'utf8'));
 
-test('recipe count meets the wave bar (>= 40 executable recipes)', () => {
-  assert.ok(RECIPES.length >= 40, `only ${RECIPES.length}`);
+test('recipe count meets the wave bar (>= 58 executable recipes; wave-67 closed the extension-family recipe gap)', () => {
+  assert.ok(RECIPES.length >= 58, `only ${RECIPES.length}`);
+});
+
+test('wave-67: recipes anchor to the wave-66 extension entries (was 6 among 39) and the new SUMMARY STATISTICS family', () => {
+  const extIds = new Set(onDisk.families
+    .filter(f => f.source === 'wave-66-extension' || f.source === 'wave-67-extension')
+    .flatMap(f => f.entries.map(e => e.id)));
+  const anchored = RECIPES.filter(r => extIds.has(r.catalog_ref));
+  assert.ok(anchored.length >= 14, `only ${anchored.length} recipes anchored to extension entries`);
 });
 
 test('>= 90% of recipes pass their own example (honest failures stay receipted)', () => {

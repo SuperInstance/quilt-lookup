@@ -5,7 +5,7 @@
 1. **One mega-JSON, hand-written** — rejected: 65KB of prose can't be hand-transcribed
    reliably; a parser is also the *losslessness proof* (census tests).
 2. **SQLite database** — rejected for v0: diffability and zero-shot readability of a
-   JSON file beat query power at this scale (1027 rows); sqlite can be derived later.
+   JSON file beat query power at this scale (1040 rows); sqlite can be derived later.
 3. **Per-family JSON files** (chosen for the catalog, one file total for simplicity) —
    merged into one document with per-family `source` provenance: the catalog is read
    far more than it is written, and one file makes the "nothing lost" census trivial.
@@ -62,5 +62,58 @@ conservative rules and receipts the disagreement rather than resolving it by fia
 - quilt-runbook: recipe validation failures (if any in future batches) should flow
   through adjustment records — the catalog is itself a quilt that can stop needing
   manual fixes.
-- Wave-67: SUMMARY STATISTICS family extension; recipe generation for the 5 new
-  extension families beyond the current 6 samples.
+- The wave-66 queue said: "SUMMARY STATISTICS family extension; recipe generation for
+  the 5 new extension families" — wave-67 (lane 67-b) consumed both; see the section below.
+
+## Wave-67 extension (lane 67-b) — SUMMARY STATISTICS + the recipe gap closed
+
+**What Round 71's queue named and wave-66's recipes proved:** the 5 extension families had
+only 6 of 44 recipes anchored to their entries (39 entries, mostly recipe-orphan), and the
+catalog had no SUMMARY STATISTICS family at all — mean/median/quartiles/EWMA are the most
+requested spreadsheet surfaces on earth and the catalog (whose filename says "not complete")
+lacked them.
+
+**Ideation pass (how to add a family, three ways):**
+1. **A second extensions file** (`extensions-wave67.json`) — rejected: two files invites
+   divergent merge invocations and wave-blind tooling; one extensions file with per-family
+   `wave` provenance keeps a single source of extension truth.
+2. **A separate catalog repo per wave** — rejected: consumers would need N checkouts to
+   read one catalog; the merged single-file contract is what other lanes consume.
+3. **Append to `catalog/extensions/extensions.json` with a `wave` field per family**
+   (chosen) — append-only (existing families untouched), provenance survives the merge
+   (`source: "wave-67-extension"`), and tests can pin it.
+
+**Merge idempotence (the in-place rebuild law):** the canonical invocation
+`node src/merge-extensions.js catalog/spreadsheet-types.json catalog/extensions/extensions.json catalog/spreadsheet-types.json`
+merges the catalog with ITSELF as output. v0 of the merger would have re-appended the
+wave-66 families on every run (duplicate-everything). Wave-67 fixed it: the merger now
+strips any base family whose source is an extension source (`wave-*-extension`) and
+re-supplies them from the extensions file — extension truth lives in extensions/*.json,
+never in the merged artifact. Verified by running the merge twice and diffing the full id
+list (all 1027 wave-66-era ids preserved, identical census both runs). The CLI also now
+accepts multiple extension files (first arg base, LAST arg out, middle = extension files).
+
+**Recipes added (27, all machine-checked in `catalog/validation-report.json`):**
+15 anchored to wave-66 extension entries (typewriter confusion, KL drift, mutual
+information, Nash check, saddle check, 2-player Shapley, phase-margin bands, Bode corner,
+state-space tick, logistic fixed point, basin, Lyapunov class, degree, knot crossings,
+Betti→χ) + 13 SUMMARY STATISTICS (pooled mean, 3-value median, mode count, quartile band,
+IQR outlier fences, midrange, range, percentile bands, Pearson skewness, kurtosis class,
+3-point moving average, EWMA tick, coefficient of variation). 44 → 73 recipes; 21 now
+anchor extension entries. Test bar raised 40 → 58 with a new ≥14-extension-anchor test.
+
+**Two honest findings while extending:**
+1. `classifyCatalog` passed the family OBJECT to `ruleReason` instead of its name, so
+   every reason line silently degraded to the default text — classes were right,
+   explainability was broken (wave-66 latent bug). Fixed; reasons now name the law.
+2. `scripts/emit-recipes.mjs` is a stale incarnation artifact: it reads a
+   `types.entries`/`types.extensions` catalog shape that the sealed parser never produced,
+   so it cannot run against the committed catalog. The per-recipe JSON files under
+   `recipes/*.json` + `index.json` (56 recipes) are its dormant output, superseded by
+   `recipes/recipes.js` (73 recipes) which the tests execute. Left untouched (never-delete
+   law) and receipted here; the next lane should either port the emitter to the
+   `families[]` shape or retire it to an attic directory.
+
+**Classification note:** SUMMARY STATISTICS joins PURE_FAMILIES (deterministic arithmetic),
+with a guard rule — "five-number summary" contains "summar", a text-summarization keyword,
+which would misfire into needs-dynamic-model; the family outranks the keyword.
